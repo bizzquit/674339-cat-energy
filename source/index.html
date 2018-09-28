@@ -13,13 +13,13 @@
     <!--главное меню-->
     <div class="page-header__logo-menu">
       <div class="page-header__logo">
-        <img src="1.png" alt="Логотип Кэт-Энерджи">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Кэт-Энерджи">
       </div>
       <nav class="page-header__main-menu">
-        <ul>
-          <li>Главная</li>
-          <li><a href="catalog.html">Каталог продукции</a></li>
-          <li><a href="form.html">Подбор программы</a></li>
+        <ul class="page-header__items">
+          <li class="page-header__item--active">Главная</li>
+          <li class="page-header__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="page-header__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -75,13 +75,49 @@
     </section>
     <!--Живой пример-->
     <section class="page-main__example example">
-
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div class="example__stat">
+        <div class="example__stat-items">
+          <div class="example__stat-item">
+            <div class="example__stat-result">5 кг</div>
+            <div class="example__stat-value">снижение веса</div>
+          </div>
+          <div class="example__stat-item">
+            <div class="example__stat-result">60 дней</div>
+            <div class="example__stat-value">затрачено времени</div>
+          </div>
+        </div>
+        <div class="example__cost-block cost-block">
+          <p class="cost-block__text">Затраты на питание: 15 000 руб.</p>
+        </div>
+        <div class="example__before-after before-after">
+          <div class="before-after__image">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото кота До и После">
+          </div>
+          <div class="before-after__status">
+            <span class="before-after__before">Было</span>
+            <span class="before-after__after">Стало</span>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index contacts ">
     <!--Приглашаем к сотрудничеству-->
+    <section class="contacts__contacts-map contacts-map">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
+      <div class="contacts-map__contacts-items">
+        <div class="contacts-map__item-title">
+          <p class="contacts-map__title">Приглашаем к сотрудничеству дилеров!</p>
+        </div>
+        <div class="contacts-map__item-adress">
+          <p class="contacts-map__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+    </section>
+
     <!--логотип-->
     <!--Соц. иконки-->
     <!--лого академии-->
