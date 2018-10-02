@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header page-header--index">
+    <!--логотип-->
+    <!--главное меню-->
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Кэт-Энерджи">
+      </div>
+      <nav class="page-header__main-menu">
+        <ul class="page-header__items">
+          <li class="page-header__item page-header__item--active">Главная</li>
+          <li class="page-header__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="page-header__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--Промо - реклама-->
+    <!--Ссылка на форму-->
+    <section class="page-header__promo promo">
+      <div class="promo__text-block">
+        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <p class="promo__text text">Занялся собой? Займись котом!</p>
+      </div>
+      <div class="promo__block-link">
+        <a href="form.html" class="promo__link-form btn">Подобрать программу</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="page-main page-main--index">
+    <!--Ссылки на каталог 1 и 2 программы питания-->
+    <section class="page-main__programs programs">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <div class="programs__container container">
+        <div class="programs__block programs__block-slim">
+          <h3 class="programs__block-title">Похудение</h3>
+          <p class="programs__block-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a href="programs-slim.html" class="programs__block-link">Каталог Slim </a>
+        </div>
+        <div class="programs__block program__block-pro">
+          <h3 class="programs__block-title">Набор массы</h3>
+          <p class="programs__block-text">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a href="programs-slim.html" class="programs__block-link">Каталог Pro </a>
+        </div>
+      </div>
+    </section>
+    <!--Как это работает-->
+    <section class="page-main__features features">
+      <h2 class="features__title title">Как это работает</h2>
+      <ul class="features__items">
+        <li class="features__item">
+          <p class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+    <!--Живой пример-->
+    <section class="page-main__example example">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div class="example__stat">
+        <div class="example__stat-items">
+          <div class="example__stat-item">
+            <div class="example__stat-result">5 кг</div>
+            <div class="example__stat-value">снижение веса</div>
+          </div>
+          <div class="example__stat-item">
+            <div class="example__stat-result">60 дней</div>
+            <div class="example__stat-value">затрачено времени</div>
+          </div>
+        </div>
+        <p class="example__cost-block--text">Затраты на питание: 15 000 руб.</p>
+        <div class="example__before-after before-after">
+          <div class="before-after__image">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото кота До и После">
+          </div>
+          <div class="before-after__status">
+            <span class="before-after__before">Было</span>
+            <span class="before-after__after">Стало</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer contacts">
+    <section class="contacts__contacts-map">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
+      <div class="contacts__contacts-items">
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="карта - Где мы находимся">
+      </div>
+    </section>
+    <!--логотип-->
+    <div class="page-footer__logo">
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="логотип компании">
+    </div>
+    <section class="page-footer__social-icons social-icons">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social-icons__items">
+        <li class="social-icons__item social-icons__item--vk"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в вконтакте"></li>
+        <li class="social-icons__item social-icons__item--inst"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в инстаграмм"></li>
+        <li class="social-icons__item social-icons__item--fb"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в фэйсбук"></li>
+      </ul>
+    </section>
+    <div class="page-footer__copyright copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <h4 class="copyright__name"><span class="copyright__name--uppercase">Html</span> Academy</h4>
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="логотип академии">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
 </html>
