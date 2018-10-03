@@ -1,0 +1,14 @@
+/**Глобальные стили**/
+/*шрифты*/
+@import "global/fonts.scss";
+/*нормалайз*/
+@import "normalize.scss";
+/*базовые цвета*/
+@import "global/basic-colors.scss";
+/* параметры для страницы */
+@import "global/page.scss";
+
+/**Подлючаем стили по блокам**/
+/* Page-Header*/
+@import "blocks/page-header.scss";
+
