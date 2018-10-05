@@ -4,11 +4,17 @@
 /*нормалайз*/
 @import "normalize.scss";
 /*базовые цвета*/
-@import "global/basic-colors.scss";
+@import "global/variables.scss";
 /* параметры для страницы */
+@import "global/mixins.scss";
 @import "global/page.scss";
 
 /**Подлючаем стили по блокам**/
 /* Page-Header*/
 @import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-main__programs.scss";
+@import "blocks/page-main__features.scss";
+@import "blocks/page-main__example.scss";
+@import "blocks/page-footer.scss";
 

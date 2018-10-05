@@ -1,0 +1,79 @@
+@mixin m-p-clear(){
+  margin: 0;
+  padding: 0;
+}
+@mixin padd-mobile(){
+  padding: 0 20px;
+}
+
+@mixin h1-size-font(){
+  @include m-p-clear();
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  font-size: 36px;
+}
+
+@mixin h2-size-font(){
+  @include m-p-clear();
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.01em;
+  font-size: 36px;
+}
+
+@mixin h3-size-font(){
+  @include m-p-clear();
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 37.02px;
+  letter-spacing: 0.01em;
+  font-size: 24px;
+}
+
+@mixin p-text(){
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  color: #444444;
+}
+
+@mixin a-btn(){
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  min-height:30px;
+  background-color: $green-btn;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+@mixin list-style-none(){
+  list-style: none;
+  @include m-p-clear();
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
