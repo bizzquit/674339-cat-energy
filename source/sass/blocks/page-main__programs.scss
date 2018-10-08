@@ -1,6 +1,6 @@
 .page-main__programs{
-  @include m-p-clear();
-  @include padd-mobile();
+  width: $mobiles;
+  margin: 0 auto;
 }
 .programs__block{
   @include padd-mobile();

@@ -1,16 +1,18 @@
 .page-main__features{
-  @include m-p-clear();
-  @include padd-mobile();
+  width: $mobiles;
   margin-bottom: 40px;
+  margin: 0 auto;
 }
 
 .features__title{
   @include h2-size-font();
   color: $color-text;
+  @include padd-mobile();
 }
 
 .features__items{
   @include list-style-none();
+  @include padd-mobile();
 }
 
 .features__item{

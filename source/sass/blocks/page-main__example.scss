@@ -1,15 +1,22 @@
 .page-main__example{
   @include m-p-clear();
-  @include padd-mobile();
   background: $bg-lite-grey;
+  width: $mobiles;
+  margin: 0 auto;
 }
 
 .example__title{
   @include h2-size-font();
+  @include padd-mobile();
 }
 
 .example__text{
   @include p-text();
+  @include padd-mobile();
+}
+
+.example__stat{
+  @include padd-mobile();
 }
 
 .example__stat-items{
@@ -69,6 +76,9 @@
   display: flex;
   justify-content: space-between;
   width: auto;
+  @include oswald-regular();
+  font-size: 16px;
+  line-height: 20px;
   }
 
 .before-after__block{
@@ -78,5 +88,5 @@
 }
 .before-after__block--after::after{
   content: "";
-  
+
 }

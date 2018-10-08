@@ -6,6 +6,18 @@
   padding: 0 20px;
 }
 
+@mixin oswald-regular(){
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+@mixin arial-regular(){
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
 @mixin h1-size-font(){
   @include m-p-clear();
   font-family: "Oswald", "Arial", sans-serif;
