@@ -1,0 +1,42 @@
+.catalog__title {
+  @include h2-size-font();
+  @include padd-mobile();
+  color: $color-text;
+}
+
+.catalog__block {
+  @include padd-mobile();
+}
+
+.catalog__list {
+  @include list-style-none();
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__block-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.catalog__title-all {
+  @include oswald-regular();
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.catalog__value-all {
+  @include arial-regular();
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи | Каталог Продукции</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -72,7 +74,7 @@
           <!--Контактные данные-->
           <div class="form__contact-block contacts">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <ul class="forms__contact-items text-item">
+            <ul class="form__contact-items text-item">
               <li class="form__contact-item contact-item">
                 <label for="email" class="text-item__label">e-mail:*</label>
                 <input type="email" name="email" id="email" class="text-item__input" placeholder="kuklachev@gmail.com">
@@ -92,6 +94,7 @@
           </div>
           <!--Дополнительно-->
           <div class="form__extra-info extra-info">
+            <h2 class="form__title">Дополнительно</h2>
             <ul class="extra-info__items">
               <li class="extra-info__item extra-item">
                 <input type="checkbox" id="sugar" name="sugar" class="extra-item__input extra-item__input--sugar" checked>
@@ -114,7 +117,7 @@
           <!--Кнопка отправить данные-->
           <div class="form__submit-block btn-block">
             <button type="submit" class="btn-block__button button">Отправить заявку</button>
-            <p class="btn-block__text">*- Обязательные поля</p>
+            <p class="btn-block__text">* &mdash; Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -151,7 +154,7 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,24 +1,25 @@
-@mixin m-p-clear(){
+@mixin m-p-clear() {
   margin: 0;
   padding: 0;
 }
-@mixin padd-mobile(){
+
+@mixin padd-mobile() {
   padding: 0 20px;
 }
 
-@mixin oswald-regular(){
+@mixin oswald-regular() {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
-@mixin arial-regular(){
+@mixin arial-regular() {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
-@mixin h1-size-font(){
+@mixin h1-size-font() {
   @include m-p-clear();
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -27,7 +28,7 @@
   font-size: 36px;
 }
 
-@mixin h2-size-font(){
+@mixin h2-size-font() {
   @include m-p-clear();
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -36,7 +37,7 @@
   font-size: 36px;
 }
 
-@mixin h3-size-font(){
+@mixin h3-size-font() {
   @include m-p-clear();
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -45,7 +46,7 @@
   font-size: 24px;
 }
 
-@mixin p-text(){
+@mixin p-text() {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 18px;
@@ -54,11 +55,11 @@
   color: #444444;
 }
 
-@mixin a-btn(){
+@mixin a-btn() {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  min-height:30px;
+  min-height: 30px;
   background-color: $green-btn;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -70,11 +71,15 @@
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-@mixin list-style-none(){
-  list-style: none;
+@mixin list-style-none() {
   @include m-p-clear();
+  list-style: none;
 }
 
 @mixin visually-hidden() {
@@ -88,4 +93,17 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin border-input() {
+  border: 1px solid $lite-grey;
+}
+
+@mixin font-s-label() {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  margin-right: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }

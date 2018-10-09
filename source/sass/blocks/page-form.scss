@@ -1,0 +1,16 @@
+.page-form__container {
+  @include padd-mobile();
+}
+
+.page-form__title {
+  @include h2-size-font();
+  color: $color-text;
+}
+
+.page-form__text {
+  @include oswald-regular();
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+  width: 230px;
+}

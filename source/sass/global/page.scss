@@ -1,8 +1,9 @@
-.page{
+.page {
   width: auto;
   margin: 0;
   padding: 0;
 }
-.visually-hidden{
+
+.visually-hidden {
   @include visually-hidden();
 }

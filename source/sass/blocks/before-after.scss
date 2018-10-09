@@ -1,0 +1,22 @@
+.before-after__image {
+  margin-left: -20px;
+}
+
+.before-after__status {
+  @include oswald-regular();
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.before-after__block {
+  width: 50%;
+  min-height: 50px;
+  text-align: center;
+}
+
+.before-after__block--after::after {
+  content: "";
+}
