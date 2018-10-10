@@ -30,6 +30,10 @@
   }
 }
 
+.page-header__items {
+  @include list-style-none();
+}
+
 .page-header__items--close {
   display: none;
 }
@@ -46,14 +50,55 @@
   min-height: 500px;
   background: url("../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
 }
-/*
 
 @media (min-width: $tablets) {
   .page-header {
     width: $tablets;
   }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__main-menu {
+    flex-grow: 1;
+  }
+
+  .page-header__logo {
+    margin-right: 75px;
+  }
+
+  .page-header__btn {
+    display: none;
+  }
+
+  .page-header__items {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__item a {
+    text-decoration: none;
+    color: $color-text-2;
+  }
+
+  .page-header__item {
+    @include oswald-regular();
+    color: $color-text-2;
+    font-size: 18px;
+    line-height: 24.86px;
+    padding: 10px 0;
+  }
+
+  .page-header__item--active {
+    border-bottom: 2px solid $green-btn;
+  }
+
 }
 
+/*
 @media (min-width: $desktops) {
   .page-header {
     width: $desktops;
