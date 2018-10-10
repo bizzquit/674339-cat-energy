@@ -1,0 +1,6 @@
+.page-main__example {
+  @include m-p-clear();
+  background: $bg-lite-grey;
+  width: $mobiles;
+  margin: 0 auto;
+}

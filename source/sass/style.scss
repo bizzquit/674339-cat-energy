@@ -1,0 +1,31 @@
+/**Глобальные стили**/
+/*шрифты*/
+@import "global/fonts.scss";
+/*нормалайз*/
+/*@import "normalize.scss";*/
+/*базовые цвета*/
+@import "global/variables.scss";
+/* параметры для страницы */
+@import "global/mixins.scss";
+@import "global/page.scss";
+
+/**Подлючаем стили по блокам**/
+/* Page-Header*/
+@import "blocks/page-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/page-main.scss";
+@import "blocks/programs.scss";
+@import "blocks/features.scss";
+@import "blocks/page-main__example.scss";
+@import "blocks/example.scss";
+@import "blocks/before-after.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/extra-products.scss";
+@import "blocks/card-product.scss";
+@import "blocks/page-form.scss";
+@import "blocks/form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social-icons.scss";
+@import "blocks/copyright.scss";

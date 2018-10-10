@@ -1,0 +1,8 @@
+.social-icons__items {
+  @include list-style-none();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 90px;
+  border-bottom: 1px solid $color-d9;
+}

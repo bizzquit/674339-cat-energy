@@ -1,0 +1,26 @@
+.contacts__contacts-items {
+  @include padd-mobile();
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  @include oswald-regular();
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-width: 140px;
+}
+
+.contacts__address {
+  @include arial-regular();
+  font-size: 14px;
+  line-height: 20px;
+  min-width: 140px;
+}
+
+.contacts__map {
+  width: auto;
+  height: 400px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+}

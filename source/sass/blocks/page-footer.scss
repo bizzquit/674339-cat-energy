@@ -1,0 +1,11 @@
+.page-footer {
+  @include m-p-clear();
+  width: $mobiles;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid $color-d9;
+}

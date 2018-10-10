@@ -4,19 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header page-header--index">
     <!--логотип-->
     <!--главное меню-->
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Кэт-Энерджи">
+        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт-Энерджи">
       </div>
       <nav class="page-header__main-menu">
-        <ul class="page-header__items">
+        <button class="page-header__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="page-header__items page-header__items--open">
           <li class="page-header__item page-header__item--active">Главная</li>
           <li class="page-header__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="page-header__item"><a href="form.html">Подбор программы</a></li>
@@ -43,12 +47,12 @@
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs__container container">
         <div class="programs__block programs__block-slim">
-          <h3 class="programs__block-title">Похудение</h3>
+          <h3 class="programs__block-title programs__block-title--slim">Похудение</h3>
           <p class="programs__block-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="programs-slim.html" class="programs__block-link">Каталог Slim </a>
         </div>
-        <div class="programs__block program__block-pro">
-          <h3 class="programs__block-title">Набор массы</h3>
+        <div class="programs__block programs__block-pro">
+          <h3 class="programs__block-title programs__block-title--pro">Набор массы</h3>
           <p class="programs__block-text">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="programs-slim.html" class="programs__block-link">Каталог Pro </a>
@@ -59,16 +63,16 @@
     <section class="page-main__features features">
       <h2 class="features__title title">Как это работает</h2>
       <ul class="features__items">
-        <li class="features__item">
+        <li class="features__item features__item--leaf">
           <p class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--powder">
           <p class="features__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--dining">
           <p class="features__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--clock">
           <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -88,14 +92,14 @@
             <div class="example__stat-value">затрачено времени</div>
           </div>
         </div>
-        <p class="example__cost-block--text">Затраты на питание: 15 000 руб.</p>
+        <p class="example__cost-block example__cost-block--text">Затраты на питание: 15 000 руб.</p>
         <div class="example__before-after before-after">
           <div class="before-after__image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото кота До и После">
+            <img src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота До и После">
           </div>
           <div class="before-after__status">
-            <span class="before-after__before">Было</span>
-            <span class="before-after__after">Стало</span>
+            <span class="before-after__block before-after__block--before before-after__block--active">Было</span>
+            <span class="before-after__block before-after__block--after">Стало</span>
           </div>
         </div>
       </div>
@@ -107,32 +111,32 @@
       <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
       <div class="contacts__contacts-items">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="карта - Где мы находимся">
+        <img src="img/map-pin.png" width="124" height="106" alt="карта - Где мы находимся">
       </div>
     </section>
     <!--логотип-->
     <div class="page-footer__logo">
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="логотип компании">
+      <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
     </div>
     <section class="page-footer__social-icons social-icons">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-icons__items">
-        <li class="social-icons__item social-icons__item--vk"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в вконтакте"></li>
-        <li class="social-icons__item social-icons__item--inst"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в инстаграмм"></li>
-        <li class="social-icons__item social-icons__item--fb"><img src="http://placehold.it/150x100" width="150" height="100" alt="Мы в фэйсбук"></li>
+        <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
+        <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
+        <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
       </ul>
     </section>
     <div class="page-footer__copyright copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <h4 class="copyright__name"><span class="copyright__name--uppercase">Html</span> Academy</h4>
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="логотип академии">
+        <h4 class="copyright__name">HTML Academy</h4>
+        <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
       </a>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

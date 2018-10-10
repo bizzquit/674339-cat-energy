@@ -1,0 +1,105 @@
+.form__text-items {
+  @include list-style-none();
+  @include m-p-clear();
+}
+
+.form__program-items {
+  @include list-style-none();
+  @include m-p-clear();
+}
+
+.form__contact-items {
+  @include list-style-none();
+  @include m-p-clear();
+}
+
+.extra-info__items {
+  @include list-style-none();
+  @include m-p-clear();
+}
+
+.form__text-item {
+  width: auto;
+  height: 50px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.form__title {
+  @include oswald-regular();
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text;
+}
+
+.form__contact-item {
+  width: auto;
+  height: 50px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.text-item__label {
+  @include oswald-regular();
+  @include font-s-label();
+}
+
+.program-item__radio {
+  @include oswald-regular();
+  @include font-s-label();
+}
+
+.text-item__input::placeholder {
+  @include oswald-regular();
+  @include font-s-label();
+  color: $color-text-4;
+}
+
+.text-item__input {
+  @include border-input();
+  width: 100%;
+  padding: 14px 0 14px 15px;
+}
+
+.comment__text-input {
+  @include border-input();
+  width: 263px;
+  min-height: 118px;
+  padding: 15px 0 15px 15px;
+  resize: none;
+}
+
+.comment__text-input::placeholder {
+  @include oswald-regular();
+  @include font-s-label();
+  color: $color-text-4;
+}
+
+.extra-item__label {
+  @include oswald-regular();
+  @include font-s-label();
+  margin-left: 15px;
+}
+
+.extra-info__item {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 12px 0;
+}
+
+.btn-block__button {
+  @include a-btn();
+  border: none;
+  padding: 0;
+}
+
+.btn-block__text {
+  @include arial-regular();
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text-4;
+  text-align: center;
+}
