@@ -20,7 +20,7 @@
   @include arial-regular();
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-4;
   display: block;
   width: 140px;
 }
@@ -40,21 +40,9 @@
   float: right;
   text-align: right;
   width: 40%;
-}
 
-.card-product__info-value::after {
-  content: "";
-  display: block;
-}
-
-.card-product__btn {
-  @include a-btn();
-}
-
-.card-product__btn--all {
-  @include oswald-regular();
-  font-size: 16px;
-  line-height: 20px;
-  color: #444444;
-  background-color: $bgr;
+  &::after {
+    content: "";
+    display: block;
+  }
 }

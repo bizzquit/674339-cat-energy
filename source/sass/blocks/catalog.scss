@@ -38,5 +38,17 @@
   @include arial-regular();
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-4;
+}
+
+.catalog__item-btn {
+  @include a-btn();
+}
+
+.catalog__item-btn--all {
+  @include oswald-regular();
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-4;
+  background-color: $bgr;
 }

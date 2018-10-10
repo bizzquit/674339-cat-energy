@@ -54,7 +54,7 @@
 .text-item__input::placeholder {
   @include oswald-regular();
   @include font-s-label();
-  color: #444444;
+  color: $color-text-4;
 }
 
 .text-item__input {
@@ -74,7 +74,7 @@
 .comment__text-input::placeholder {
   @include oswald-regular();
   @include font-s-label();
-  color: #444444;
+  color: $color-text-4;
 }
 
 .extra-item__label {
@@ -100,6 +100,6 @@
   @include arial-regular();
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-4;
   text-align: center;
 }

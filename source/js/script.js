@@ -1,6 +1,12 @@
-var menuButton = document.querySelector(".page-header__main-menu");
-var menuOpen = document.querySelector(".page-header__items");
+var menuButton = document.querySelector(".page-header__btn");
+var menu = document.querySelector(".page-header__items");
+var openingMenu = document.querySelector(".page-header__items--open");
 
-menuButton.addEventListener("click", function() {
-  menuOpen.classList.add("page-header__items--open");
+if (openingMenu) {
+  menu.classList.remove("page-header__items--open");
+  menu.classList.add("page-header__items--close");
+}
+menuButton.addEventListener("click", function () {
+  menu.classList.toggle("page-header__items--open");
+  menu.classList.toggle("page-header__items--close");
 });

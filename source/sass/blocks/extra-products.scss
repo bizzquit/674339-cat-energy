@@ -37,7 +37,7 @@
   @include oswald-regular();
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $color-text-2;
 }
 
 .extra-products__info {
@@ -46,7 +46,7 @@
   justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $color-text-4;
 }
 
 .extra-products__btn {
