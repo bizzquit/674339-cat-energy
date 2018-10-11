@@ -6,3 +6,11 @@
   padding: 20px 90px;
   border-bottom: 1px solid $color-d9;
 }
+
+@media (min-width: $tablets) {
+  .social-icons__items {
+    width: 150px;
+    padding: 20px 0;
+    border: none;
+  }
+}

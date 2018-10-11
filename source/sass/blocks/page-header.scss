@@ -21,6 +21,7 @@
 .page-header__btn {
   width: 30px;
   height: 20px;
+  background-color: $bgr;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   border: none;
@@ -57,6 +58,7 @@
   }
 
   .page-header__wrapper {
+    @include padd-tablets();
     display: flex;
     justify-content: space-between;
   }
@@ -95,7 +97,6 @@
   .page-header__item--active {
     border-bottom: 2px solid $green-btn;
   }
-
 }
 
 /*

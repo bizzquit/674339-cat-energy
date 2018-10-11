@@ -69,3 +69,51 @@
     margin-left: 10px;
   }
 }
+
+@media (min-width: $tablets) {
+  .programs {
+    @include padd-tablets();
+  }
+
+  .programs__block {
+    background: none;
+    min-height: 300px;
+    padding-right: 300px;
+  }
+
+  .programs__block-title {
+    padding-left: 0;
+    font-size: 36px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 10px;
+      left: 475px;
+    }
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      left: 445px;
+    }
+
+    &--pro::before {
+      width: 272px;
+      height: 272px;
+      top: 50px;
+      left: 405px;
+    }
+  }
+
+  .programs__block-text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .programs__block-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

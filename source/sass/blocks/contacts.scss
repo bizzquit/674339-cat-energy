@@ -24,3 +24,23 @@
   height: 400px;
   background-image: url("../img/bg-map-mobile@1x.png");
 }
+
+@media (min-width: $tablets) {
+  .contacts__contacts-map {
+    width: 100%;
+  }
+
+  .contacts__contacts-items {
+    @include padd-tablets();
+  }
+
+  .contacts__title {
+    width: 165px;
+    padding: 40px;
+  }
+
+  .contacts__address {
+    width: 165px;
+    padding: 40px;
+  }
+}

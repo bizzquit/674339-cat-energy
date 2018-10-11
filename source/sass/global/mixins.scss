@@ -7,6 +7,10 @@
   padding: 0 20px;
 }
 
+@mixin padd-tablets() {
+  padding: 0 30px;
+}
+
 @mixin oswald-regular() {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;

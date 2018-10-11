@@ -9,3 +9,23 @@
   padding: 10px 0;
   border-bottom: 1px solid $color-d9;
 }
+
+@media (min-width: $tablets) {
+  .page-footer {
+    width: $tablets;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    width: 200px;
+    text-align: left;
+    border: none;
+  }
+
+  .page-footer__copyright {
+    width: 200px;
+    text-align: right;
+  }
+}
