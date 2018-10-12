@@ -52,3 +52,32 @@
   color: $color-text-4;
   background-color: $bgr;
 }
+
+@media (min-width: $tablets) {
+  .catalog__title {
+    @include padd-tablets();
+    font-size: 60px;
+  }
+
+  .catalog__block {
+    @include padd-tablets();
+  }
+
+  .catalog__list {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 244px;
+    padding: 40px;
+    margin-top: 140px;
+    background-color: $color-f2;
+  }
+
+  .catalog__product {
+    flex-direction: column;
+    align-items: center;
+  }
+}

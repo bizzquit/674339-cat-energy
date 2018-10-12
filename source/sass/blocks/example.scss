@@ -61,14 +61,16 @@
 
 @media (min-width: $tablets) {
   .example__title {
-    font-size: 60px;
     @include padd-tablets();
+    font-size: 60px;
   }
+
   .example__text {
+    @include padd-tablets();
     font-size: 16px;
     line-height: 24px;
-    @include padd-tablets();
   }
+
   .example__stat {
     @include padd-tablets();
     display: flex;

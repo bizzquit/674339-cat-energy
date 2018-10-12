@@ -1,0 +1,27 @@
+.comment__text-input {
+  @include border-input();
+  width: 263px;
+  min-height: 118px;
+  padding: 15px 0 15px 15px;
+  resize: none;
+}
+
+.comment__text-input::placeholder {
+  @include oswald-regular();
+  @include font-s-label();
+  color: $color-text-4;
+}
+
+@media (min-width: $tablets) {
+  .comment__text-input {
+    width: 613px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.extra-info__items {
+  @include list-style-none();
+  @include m-p-clear();
+}
+
+.extra-info__item {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 12px 0;
+}
+
+@media (min-width: $tablets) {
+  .extra-info {
+    margin-bottom: 40px;
+  }
+
+  .extra-info__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .extra-info__item {
+    width: 280px;
+  }
+
+  .extra-item__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

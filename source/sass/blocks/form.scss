@@ -13,11 +13,6 @@
   @include m-p-clear();
 }
 
-.extra-info__items {
-  @include list-style-none();
-  @include m-p-clear();
-}
-
 .form__text-item {
   width: auto;
   height: 50px;
@@ -63,31 +58,10 @@
   padding: 14px 0 14px 15px;
 }
 
-.comment__text-input {
-  @include border-input();
-  width: 263px;
-  min-height: 118px;
-  padding: 15px 0 15px 15px;
-  resize: none;
-}
-
-.comment__text-input::placeholder {
-  @include oswald-regular();
-  @include font-s-label();
-  color: $color-text-4;
-}
-
 .extra-item__label {
   @include oswald-regular();
   @include font-s-label();
   margin-left: 15px;
-}
-
-.extra-info__item {
-  display: flex;
-  align-items: center;
-  min-height: 30px;
-  padding: 12px 0;
 }
 
 .btn-block__button {
@@ -102,4 +76,100 @@
   line-height: 16px;
   color: $color-text-4;
   text-align: center;
+}
+
+@media (min-width: $tablets) {
+  .form__contact-items {
+    margin-top: 40px;
+  }
+
+  .form__contact-block {
+    position: relative;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -70px;
+      width: 768px;
+      height: 3px;
+      background-color: $green-btn;
+      z-index: -1;
+    }
+  }
+
+  .form__comment {
+    position: relative;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -70px;
+      width: 768px;
+      height: 3px;
+      background-color: $green-btn;
+      z-index: -1;
+    }
+  }
+
+  .form__extra-info {
+    position: relative;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -70px;
+      width: 768px;
+      height: 3px;
+      background-color: $green-btn;
+      z-index: -1;
+    }
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+    display: inline;
+    padding: 0 40px;
+    background-color: #ffffff;
+    margin-left: -40px;
+  }
+
+  .btn-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-block__button {
+    width: 285px;
+    min-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .btn-block__text {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  .text-item__input {
+    font-size: 20px;
+    padding-bottom: 10px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .text-item__label {
+    font-size: 20px;
+  }
 }

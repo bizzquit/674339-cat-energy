@@ -14,3 +14,29 @@
   color: $color-text;
   width: 230px;
 }
+
+@media (min-width: $tablets) {
+  .page-form__container {
+    @include padd-tablets();
+  }
+
+  .page-form__title {
+    font-size: 60px;
+  }
+
+  .page-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 300px;
+    padding-left: 40px;
+  }
+
+  .page-form__form-block {
+    padding: 0 40px;
+  }
+
+  .form__program-cat {
+    padding: 25px;
+    border: 1px solid $lite-grey;
+  }
+}
