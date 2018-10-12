@@ -30,4 +30,13 @@ window.addEventListener("resize", function () {
 menuButton.addEventListener("click", function () {
     menu.classList.toggle("page-header__items--open");
     menu.classList.toggle("page-header__items--close");
+
+    if (!openingMenu) {
+      menuButton.style.backgroundImage = 'url("../img/icon-close.svg")';
+    }
+    else{
+      menuButton.style.backgroundImage = 'url("../img/icon-mobile-menu.svg")';
+    }
+
+
 });
