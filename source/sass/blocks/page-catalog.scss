@@ -9,3 +9,9 @@
     width: $tablets;
   }
 }
+
+@media (min-width: $desktops) {
+  .page-catalog {
+    width: $desktops;
+  }
+}

@@ -81,3 +81,24 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktops) {
+  .catalog__title {
+    @include padd-desktop();
+  }
+
+  .catalog__block {
+    width: $desktops;
+  }
+
+  .catalog__list {
+    @include padd-desktop();
+  }
+
+  .catalog__item {
+    width: 164px;
+    padding: 40px;
+    margin-top: 140px;
+    margin-right: 1px;
+  }
+}

@@ -148,3 +148,31 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktops) {
+  .extra-products {
+    @include padd-desktop();
+  }
+
+  .extra-products__title {
+    @include padd-desktop();
+  }
+
+  .extra-products__block {
+    @include padd-desktop();
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-products__list {
+    width: 820px;
+  }
+
+  .extra-products__present {
+    width: 245px;
+  }
+
+  .extra-products__btn {
+    width: 210px;
+  }
+}

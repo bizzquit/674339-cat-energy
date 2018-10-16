@@ -108,3 +108,13 @@
     width: 40%;
   }
 }
+
+@media (min-width: $desktops) {
+  .card-product__info-parameter {
+    width: 50px;
+
+    &::after {
+      width: 164px;
+    }
+  }
+}
