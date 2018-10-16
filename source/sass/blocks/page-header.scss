@@ -99,6 +99,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    width: auto;
   }
 
   .page-header__item a {
@@ -112,6 +113,7 @@
     font-size: 18px;
     line-height: 24.86px;
     padding: 10px 0;
+    border-bottom: none;
   }
 
   .page-header__item--active {
@@ -119,9 +121,25 @@
   }
 }
 
-/*
+
 @media (min-width: $desktops) {
   .page-header {
     width: $desktops;
   }
-}*/
+
+  .page-header__wrapper {
+    @include padd-desktop ();
+    border: none;
+  }
+
+  .page-header__main-menu {
+    width: 570px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .page-header__items {
+    width: 490px;
+    background: none;
+  }
+}

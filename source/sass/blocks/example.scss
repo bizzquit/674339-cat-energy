@@ -112,3 +112,30 @@
     align-self: center;
   }
 }
+
+@media (min-width: $desktops) {
+  .example__title {
+    @include padd-desktop();
+    max-width: 70%;
+  }
+
+  .example__text {
+    @include padd-desktop();
+    max-width: 40%;
+  }
+
+  .example__stat {
+    @include padd-desktop();
+    flex-direction: column;
+  }
+
+  .example__stat-items {
+    width: 30%;
+  }
+
+  .example__before-after {
+    width: 50%;
+    align-self: end;
+    margin-top: -400px;
+  }
+}

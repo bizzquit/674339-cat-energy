@@ -11,3 +11,9 @@
     background-color: $bgr;
   }
 }
+
+@media (min-width: $desktops) {
+  .page-main__example {
+    width: $desktops;
+  }
+}

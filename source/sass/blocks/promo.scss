@@ -50,7 +50,8 @@
     margin-top: 20px;
 
     &::after {
-      @include visually-hidden();
+      /*@include visually-hidden();*/
+      display: none;
     }
   }
 
@@ -80,3 +81,28 @@
     padding-top: 15px;
   }
 }
+
+@media (min-width: $desktops) {
+  .promo {
+    min-height: 605px;
+  }
+  .page-header__promo {
+    background: url("../img/index-background-desktop@1x.jpg") right top no-repeat;
+    margin-top: -90px;
+    padding-top: 90px;
+  }
+
+  .promo__text-block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
+    background-size: 550px ;
+    top: 50px;
+    left: 435px;
+  }
+}
+
+

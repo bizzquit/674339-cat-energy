@@ -10,3 +10,9 @@
     width: $tablets;
   }
 }
+
+@media (min-width: $desktops) {
+  .page-main {
+    width: $desktops;
+  }
+}
