@@ -74,6 +74,7 @@
   .programs {
     @include padd-tablets();
   }
+
   @media (max-width: 1299px) {
     .programs__block {
       background: none;
