@@ -124,6 +124,12 @@
     @include padd-desktop();
   }
 
+  .page-main__programs {
+    @include padd-desktop ();
+    width: $desktops - 80px;
+    margin: 0 auto;
+  }
+
   .programs__block {
     width: 40%;
     padding: 0 50px;

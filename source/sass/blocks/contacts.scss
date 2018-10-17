@@ -32,6 +32,8 @@
 
   .contacts__contacts-items {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
   }
 
   .contacts__title {

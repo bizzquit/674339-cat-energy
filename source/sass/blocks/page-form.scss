@@ -17,7 +17,19 @@
 
 @media (min-width: $tablets) {
   .page-form__container {
+    @include m-p-clear();
+  }
+
+  .page-form__title-block {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
+  }
+
+  .page-form__text-block {
+    @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
   }
 
   .page-form__title {
@@ -32,11 +44,25 @@
   }
 
   .page-form__form-block {
-    padding: 0 40px;
+    padding: 0;
   }
 
   .form__program-cat {
     padding: 25px;
     border: 1px solid $lite-grey;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-form__title-block {
+    @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
+  }
+
+  .page-form__text-block {
+    @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
   }
 }

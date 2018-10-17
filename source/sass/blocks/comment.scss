@@ -25,3 +25,10 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .comment__text-input {
+    width: 100%;
+  }
+}
+

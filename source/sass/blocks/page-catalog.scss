@@ -6,12 +6,12 @@
 
 @media (min-width: $tablets) {
   .page-catalog {
-    width: $tablets;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktops) {
   .page-catalog {
-    width: $desktops;
+    width: 100%;
   }
 }

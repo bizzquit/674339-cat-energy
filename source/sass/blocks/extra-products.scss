@@ -75,7 +75,8 @@
 
 @media (min-width: $tablets) {
   .extra-products {
-    @include padd-tablets();
+    @include m-p-clear();
+    width: 100%;
     margin-top: 60px;
 
     &::before {
@@ -91,12 +92,18 @@
     }
   }
 
+  .extra-products__container {
+    width: $tablets - 60px;
+    margin: 0 auto;
+  }
+
   .extra-products__title {
     font-size: 36px;
     line-height: 36px;
     display: inline;
     padding: 0 40px;
     background-color: $bgr;
+    margin-left: -20px;
 
     &::after {
       @include visually-hidden();
@@ -150,8 +157,10 @@
 }
 
 @media (min-width: $desktops) {
-  .extra-products {
+  .extra-products__container {
     @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
   }
 
   .extra-products__title {

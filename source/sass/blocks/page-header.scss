@@ -127,8 +127,14 @@
     width: $desktops;
   }
 
+  .page-header--index {
+    width: 100%;
+  }
+
   .page-header__wrapper {
     @include padd-desktop ();
+    width: $desktops - 80px;
+    margin: 0 auto;
     border: none;
   }
 

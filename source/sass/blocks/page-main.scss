@@ -7,12 +7,12 @@
 
 @media (min-width: $tablets) {
   .page-main {
-    width: $tablets;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktops) {
   .page-main {
-    width: $desktops;
+    width: 100%;
   }
 }

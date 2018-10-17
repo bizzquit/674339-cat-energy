@@ -56,11 +56,15 @@
 @media (min-width: $tablets) {
   .catalog__title {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
     font-size: 60px;
   }
 
   .catalog__block {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
   }
 
   .catalog__list {
@@ -85,14 +89,14 @@
 @media (min-width: $desktops) {
   .catalog__title {
     @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
   }
 
   .catalog__block {
-    width: $desktops;
-  }
-
-  .catalog__list {
     @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
   }
 
   .catalog__item {
