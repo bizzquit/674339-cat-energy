@@ -3,3 +3,15 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@media (min-width: $tablets) {
+  .page-catalog {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-catalog {
+    width: 100%;
+  }
+}

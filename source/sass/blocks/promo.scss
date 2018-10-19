@@ -32,3 +32,78 @@
 .promo__link-form {
   @include a-btn();
 }
+
+@media (min-width: $tablets) {
+  .promo {
+    @include padd-tablets();
+    min-height: 820px;
+    background: url("../img/index-can-tablet@1x.jpg") 25px 205px no-repeat;
+    margin-bottom: 80px;
+  }
+
+  .promo__text-block {
+    display: block;
+    width: 430px;
+    padding-left: 90px;
+    min-height: 240px;
+
+    margin-top: 20px;
+
+    &::after {
+      /*@include visually-hidden();*/
+      display: none;
+    }
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $color-text;
+  }
+
+  .promo__text {
+    color: $color-text;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__block-link {
+    width: 245px;
+    padding-left: 90px;
+  }
+
+  .promo__link-form {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 37px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $desktops) {
+  .promo {
+    min-height: 605px;
+  }
+
+  .page-header__promo {
+    @include padd-desktop();
+    background: none;
+    max-width: $desktops - 80px;
+
+    margin: 0 auto;
+  }
+
+  .promo__text-block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
+    background-size: 550px;
+    top: 50px;
+    left: 435px;
+  }
+}

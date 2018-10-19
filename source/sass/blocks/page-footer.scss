@@ -1,6 +1,17 @@
 .page-footer {
   @include m-p-clear();
-  width: $mobiles;
+  width: 100%;
+}
+
+.contacts__contacts-items {
+  @include padd-mobile();
+  width: $mobiles - 40px;
+  margin: 0 auto;
+}
+
+.page-footer__footer {
+  @include padd-mobile();
+  width: $mobiles - 40px;
   margin: 0 auto;
 }
 
@@ -8,4 +19,43 @@
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid $color-d9;
+}
+
+@media (min-width: $tablets) {
+  .page-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__footer {
+    @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    width: 200px;
+    text-align: left;
+    border: none;
+  }
+
+  .page-footer__copyright {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-footer {
+    width: 100%;
+  }
+
+  .page-footer__footer {
+    @include padd-desktop();
+    width: $desktops - 80px;
+  }
 }

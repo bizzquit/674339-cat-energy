@@ -39,81 +39,89 @@
         <form class="form-block__form form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Данные по вашему коту</h2>
           <!--Данные кота-->
-          <div class="form__data-cat">
-            <ul class="form__text-items">
-              <li class="form__text-item text-item">
-                <label for="cat-name" class="text-item__label">Имя:*</label>
-                <input type="text" name="cat-name" id="cat-name" class="text-item__input" placeholder="Барсик">
-              </li>
-              <li class="form__text-item text-item">
-                <label for="cat-weight" class="text-item__label">Вес (кг):*</label>
-                <input type="text" name="cat-weight" id="cat-weight" class="text-item__input" placeholder="7">
-              </li>
-              <li class="form__text-item text-item">
-                <label for="cat-age" class="text-item__label">Возраст (лет):</label>
-                <input type="text" name="cat-age" id="cat-age" class="text-item__input" placeholder="7">
-              </li>
-            </ul>
-          </div>
-          <!--цель программы-->
-          <div class="form__program-cat">
-            <ul class="form__program-items">
-              <li class="form__programs-item program-item">
-                <input type="radio" name="program" id="lose-weight" class="program-item__input" checked>
-                <label for="lose-weight" class="program-item__radio">Похудение</label>
-              </li>
-              <li class="form__programs-item program-item">
-                <input type="radio" name="program" id="add-weight" class="program-item__input">
-                <label for="add-weight" class="program-item__radio">Набор массы</label>
-              </li>
-              <li class="form__programs-item program-item">
-                <input type="radio" name="program" id="advice" class="program-item__input">
-                <label for="advice" class="program-item__radio">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
+          <div class="form__center-container form__center-container--data">
+            <div class="form__data-cat">
+              <ul class="form__text-items">
+                <li class="form__text-item text-item">
+                  <label for="cat-name" class="text-item__label">Имя:*</label>
+                  <input type="text" name="cat-name" id="cat-name" class="text-item__input" placeholder="Барсик">
+                </li>
+                <li class="form__text-item text-item">
+                  <label for="cat-weight" class="text-item__label">Вес (кг):*</label>
+                  <input type="text" name="cat-weight" id="cat-weight" class="text-item__input" placeholder="7">
+                </li>
+                <li class="form__text-item text-item">
+                  <label for="cat-age" class="text-item__label">Возраст (лет):</label>
+                  <input type="text" name="cat-age" id="cat-age" class="text-item__input" placeholder="7">
+                </li>
+              </ul>
+            </div>
+            <!--цель программы-->
+            <div class="form__program-cat">
+              <ul class="form__program-items">
+                <li class="form__programs-item program-item">
+                  <input type="radio" name="program" id="lose-weight" class="program-item__input" checked>
+                  <label for="lose-weight" class="program-item__radio">Похудение</label>
+                </li>
+                <li class="form__programs-item program-item">
+                  <input type="radio" name="program" id="add-weight" class="program-item__input">
+                  <label for="add-weight" class="program-item__radio">Набор массы</label>
+                </li>
+                <li class="form__programs-item program-item">
+                  <input type="radio" name="program" id="advice" class="program-item__input">
+                  <label for="advice" class="program-item__radio">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <!--Контактные данные-->
           <div class="form__contact-block contacts">
-            <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <ul class="form__contact-items text-item">
-              <li class="form__contact-item contact-item">
-                <label for="email" class="text-item__label">e-mail:*</label>
-                <input type="email" name="email" id="email" class="text-item__input" placeholder="kuklachev@gmail.com">
-                <!--тут будет svg-icon-->
-              </li>
-              <li class="form__contact-item contact-item">
-                <label for="phone" class="text-item__label">Телефон:*</label>
-                <input type="tel" name="phone" id="phone" class="text-item__input" placeholder="8(960)900-60-90">
-                <!--тут будет svg-icon-->
-              </li>
-            </ul>
+            <div class="form__center-container">
+              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              <ul class="form__contact-items text-item">
+                <li class="form__contact-item contact-item">
+                  <label for="email" class="text-item__label">e-mail:*</label>
+                  <input type="email" name="email" id="email" class="text-item__input" placeholder="kuklachev@gmail.com">
+                  <!--тут будет svg-icon-->
+                </li>
+                <li class="form__contact-item contact-item">
+                  <label for="phone" class="text-item__label">Телефон:*</label>
+                  <input type="tel" name="phone" id="phone" class="text-item__input" placeholder="8(960)900-60-90">
+                  <!--тут будет svg-icon-->
+                </li>
+              </ul>
+            </div>
           </div>
           <!--Комментарий-->
           <div class="form__comment comment">
-            <h2 class="form__title">Комментарий</h2>
-            <textarea name="comment-text" id="comment-text" class="comment__text-input comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="form__center-container">
+              <h2 class="form__title">Комментарий</h2>
+              <textarea name="comment-text" id="comment-text" class="comment__text-input comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
           <!--Дополнительно-->
           <div class="form__extra-info extra-info">
-            <h2 class="form__title">Дополнительно</h2>
-            <ul class="extra-info__items">
-              <li class="extra-info__item extra-item">
-                <input type="checkbox" id="sugar" name="sugar" class="extra-item__input extra-item__input--sugar" checked>
-                <label for="sugar" class="extra-item__label extra-item__label--sugar">Сахарозаменитель</label>
-              </li>
-              <li class="extra-info__item extra-item">
-                <input type="checkbox" id="water" name="water" class="extra-item__input extra-item__input--water">
-                <label for="water" class="extra-item__label extra-item__label--water">Питьевая вода</label>
-              </li>
-              <li class="extra-info__item extra-item">
-                <input type="checkbox" id="milk" name="milk" class="extra-item__input extra-item__input--milk">
-                <label for="milk" class="extra-item__label extra-item__label--milk">Молоко</label>
-              </li>
-              <li class="extra-info__item extra-item">
-                <input type="checkbox" id="vitamin" name="vitamin" class="extra-item__input extra-item__input--vitamin">
-                <label for="vitamin" class="extra-item__label extra-item__label--vitamin">Витамины</label>
-              </li>
-            </ul>
+            <div class="form__center-container">
+              <h2 class="form__title">Дополнительно</h2>
+              <ul class="extra-info__items">
+                <li class="extra-info__item extra-item">
+                  <input type="checkbox" id="sugar" name="sugar" class="extra-item__input extra-item__input--sugar" checked>
+                  <label for="sugar" class="extra-item__label extra-item__label--sugar">Сахарозаменитель</label>
+                </li>
+                <li class="extra-info__item extra-item">
+                  <input type="checkbox" id="water" name="water" class="extra-item__input extra-item__input--water">
+                  <label for="water" class="extra-item__label extra-item__label--water">Питьевая вода</label>
+                </li>
+                <li class="extra-info__item extra-item">
+                  <input type="checkbox" id="milk" name="milk" class="extra-item__input extra-item__input--milk">
+                  <label for="milk" class="extra-item__label extra-item__label--milk">Молоко</label>
+                </li>
+                <li class="extra-info__item extra-item">
+                  <input type="checkbox" id="vitamin" name="vitamin" class="extra-item__input extra-item__input--vitamin">
+                  <label for="vitamin" class="extra-item__label extra-item__label--vitamin">Витамины</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <!--Кнопка отправить данные-->
           <div class="form__submit-block btn-block">
@@ -137,22 +145,24 @@
       </div>
     </section>
     <!--логотип-->
-    <div class="page-footer__logo">
-      <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
-    </div>
-    <section class="page-footer__social-icons social-icons">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-icons__items">
-        <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
-        <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
-        <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
-      </ul>
-    </section>
-    <div class="page-footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <h4 class="copyright__name">HTML Academy</h4>
-        <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
-      </a>
+    <div class="page-footer__footer">
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
+      </div>
+      <section class="page-footer__social-icons social-icons">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-icons__items">
+          <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
+          <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
+          <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <h4 class="copyright__name">HTML Academy</h4>
+          <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>
