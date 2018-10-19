@@ -9,6 +9,10 @@
   .page-main {
     width: 100%;
   }
+
+  .page-main--index {
+    width: $tablets;
+  }
 }
 
 @media (min-width: $desktops) {

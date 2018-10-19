@@ -83,22 +83,18 @@
     margin-top: 40px;
   }
 
-  .form__data-cat {
+  .form__center-container {
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
   }
 
-  .form__program-cat {
-    @include padd-tablets();
-    width: $tablets - 62px;
-    margin: 0 auto;
+  .form__data-cat {
+    width: 100%;
   }
 
-  .form__center-container {
-    @include padd-tablets();
-    width: $tablets - 62px;
-    margin: 0 auto;
+  .form__program-cat {
+    max-width: $tablets - 62px;
   }
 
   .form__contact-block {
@@ -208,6 +204,14 @@
   .form__center-container--data {
     display: flex;
     justify-content: space-between;
+  }
+  .form__data-cat {
+    max-width: 45%;
+  }
+
+  .form__program-cat {
+    width: 100%;
+    max-width: 45%;
   }
 
   .form__contact-items {

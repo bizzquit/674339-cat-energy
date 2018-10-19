@@ -88,9 +88,11 @@
   }
 
   .page-header__promo {
-    background: url("../img/index-background-desktop@1x.jpg") right top no-repeat;
-    margin-top: -90px;
-    padding-top: 90px;
+    @include padd-desktop();
+    background: none;
+    max-width: $desktops - 80px;
+
+    margin: 0 auto;
   }
 
   .promo__text-block::after {
