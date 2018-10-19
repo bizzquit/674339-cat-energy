@@ -132,10 +132,6 @@
     position: relative;
     margin-bottom: 40px;
 
-    &::before {
-
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -143,7 +139,7 @@
       right: 0;
       top: 0;
       min-height: 690px;
-      background-color: #65A93C;
+      background-color: #65a93c;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position-x: right;
       background-position-y: top;
