@@ -4,3 +4,19 @@
   padding: 0;
   display: block;
 }
+
+@media (min-width: $tablets) {
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main--index {
+    width: $tablets;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-main {
+    width: 100%;
+  }
+}

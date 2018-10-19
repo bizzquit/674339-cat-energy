@@ -14,3 +14,55 @@
   color: $color-text;
   width: 230px;
 }
+
+@media (min-width: $tablets) {
+  .page-form__container {
+    @include m-p-clear();
+  }
+
+  .page-form__title-block {
+    @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
+  }
+
+  .page-form__text-block {
+    @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
+  }
+
+  .page-form__title {
+    font-size: 60px;
+  }
+
+  .page-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 300px;
+    padding-left: 40px;
+  }
+
+  .page-form__form-block {
+    padding: 0;
+  }
+
+  .form__program-cat {
+    padding: 25px;
+    border: 1px solid $lite-grey;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-form__title-block {
+    @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
+  }
+
+  .page-form__text-block {
+    @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
+  }
+}

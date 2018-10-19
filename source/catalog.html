@@ -18,8 +18,8 @@
       <nav class="page-header__main-menu">
         <button class="page-header__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="page-header__items page-header__items--open">
-          <li class="page-header__item page-header__item--active"><a href="index.html">Главная</a></li>
-          <li class="page-header__item">Каталог продукции</li>
+          <li class="page-header__item"><a href="index.html">Главная</a></li>
+          <li class="page-header__item page-header__item--active">Каталог продукции</li>
           <li class="page-header__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
@@ -33,7 +33,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/chicken-small-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/chicken-small-tablet@1x.png">
+                  <img src="img/chicken-small-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -58,7 +62,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/chicken-big-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/chicken-big-tablet@1x.png">
+                  <img src="img/chicken-big-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -83,7 +91,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/fish-small-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/fish-small-tablet@1x.png">
+                  <img src="img/fish-small-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -108,7 +120,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/fish-big-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/fish-big-tablet@1x.png">
+                  <img src="img/fish-big-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -133,7 +149,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/buckwheat-small-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <img src="img/buckwheat-small-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -158,7 +178,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/buckwheat-big-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                  <img src="img/buckwheat-big-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -183,7 +207,11 @@
           <div class="catalog__product card-product">
             <div class="card-product__image-block">
               <a href="product.html" class="card-product__image">
-                <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="изображение продукта">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/rice-small-desktop@1x.png">
+                  <source media="(min-width:768px)" srcset="img/rice-small-tablet@1x.png">
+                  <img src="img/rice-small-mobile@1x.jpg"  alt="изображение продукта">
+                </picture>
               </a>
             </div>
             <div class="card-product__info">
@@ -217,44 +245,48 @@
       </ul>
     </section>
     <section class="page-main__extra-products extra-products">
-      <h2 class="extra-products__title">Дополнительные товары</h2>
-      <ul class="extra-products__list">
-        <li class="extra-products__item">
-          <a href="product.html"><h3 class="extra-products__item-title">Сахорозаменитель</h3></a>
-          <div class="extra-products__info">
-            <p class="extra-products__volume">1 упаковка (100г)</p>
-            <p class="extra-products__price">100 Р.</p>
+      <div class="extra-products__container">
+        <h2 class="extra-products__title">Дополнительные товары</h2>
+        <div class="extra-products__block">
+          <ul class="extra-products__list">
+            <li class="extra-products__item">
+              <a href="product.html"><h3 class="extra-products__item-title">Сахорозаменитель</h3></a>
+              <div class="extra-products__info">
+                <p class="extra-products__volume">1 упаковка (100г)</p>
+                <p class="extra-products__price">100 Р.</p>
+              </div>
+              <a href="zakaz.html" class="extra-products__btn">Заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <a href="product.html"><h3 class="extra-products__item-title">Питьевая вода</h3></a>
+              <div class="extra-products__info">
+                <p class="extra-products__volume">5 литров</p>
+                <p class="extra-products__price">50 Р.</p>
+              </div>
+              <a href="zakaz.html" class="extra-products__btn">Заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <a href="product.html"><h3 class="extra-products__item-title">Молоко</h3></a>
+              <div class="extra-products__info">
+                <p class="extra-products__volume">1 литр</p>
+                <p class="extra-products__price">100 Р.</p>
+              </div>
+              <a href="zakaz.html" class="extra-products__btn">Заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <a href="product.html"><h3 class="extra-products__item-title">Витамины</h3></a>
+              <div class="extra-products__info">
+                <p class="extra-products__volume">1 упаковка (30г)</p>
+                <p class="extra-products__price">300 Р</p>
+              </div>
+              <a href="zakaz.html" class="extra-products__btn">Заказать</a>
+            </li>
+          </ul>
+          <div class="extra-products__present">
+            <img class="extra-products__present-icon" src="img/icon-gift.svg" width="60" height="65" alt="иконка подарка">
+            <p class="extra-products__present-text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-          <a href="zakaz.html" class="extra-products__btn">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <a href="product.html"><h3 class="extra-products__item-title">Питьевая вода</h3></a>
-          <div class="extra-products__info">
-            <p class="extra-products__volume">5 литров</p>
-            <p class="extra-products__price">50 Р.</p>
-          </div>
-          <a href="zakaz.html" class="extra-products__btn">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <a href="product.html"><h3 class="extra-products__item-title">Молоко</h3></a>
-          <div class="extra-products__info">
-            <p class="extra-products__volume">1 литр</p>
-            <p class="extra-products__price">100 Р.</p>
-          </div>
-          <a href="zakaz.html" class="extra-products__btn">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <a href="product.html"><h3 class="extra-products__item-title">Витамины</h3></a>
-          <div class="extra-products__info">
-            <p class="extra-products__volume">1 упаковка (30г)</p>
-            <p class="extra-products__price">300 Р</p>
-          </div>
-          <a href="zakaz.html" class="extra-products__btn">Заказать</a>
-        </li>
-      </ul>
-      <div class="extra-products__present">
-        <img class="extra-products__present-icon" src="img/icon-gift.svg" width="60" height="65" alt="иконка подарка">
-        <p class="extra-products__present-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>
@@ -271,22 +303,24 @@
       </div>
     </section>
     <!--логотип-->
-    <div class="page-footer__logo">
-      <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
-    </div>
-    <section class="page-footer__social-icons social-icons">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-icons__items">
-        <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
-        <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
-        <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
-      </ul>
-    </section>
-    <div class="page-footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <h4 class="copyright__name">HTML Academy</h4>
-        <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
-      </a>
+    <div class="page-footer__footer">
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
+      </div>
+      <section class="page-footer__social-icons social-icons">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-icons__items">
+          <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
+          <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
+          <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <h4 class="copyright__name">HTML Academy</h4>
+          <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>

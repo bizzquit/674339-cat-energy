@@ -20,3 +20,10 @@
 .before-after__block--after::after {
   content: "";
 }
+
+@media (min-width: $tablets) {
+  .before-after__image {
+    width: 690px;
+    height: 517px;
+  }
+}

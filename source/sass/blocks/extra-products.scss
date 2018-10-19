@@ -72,3 +72,116 @@
   width: 55%;
   text-align: center;
 }
+
+@media (min-width: $tablets) {
+  .extra-products {
+    @include m-p-clear();
+    width: 100%;
+    margin-top: 60px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $green-btn;
+      z-index: -1;
+    }
+  }
+
+  .extra-products__container {
+    width: $tablets - 60px;
+    margin: 0 auto;
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    display: inline;
+    padding: 0 40px;
+    background-color: $bgr;
+    margin-left: -20px;
+
+    &::after {
+      @include visually-hidden();
+    }
+  }
+
+  .extra-products__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+
+  .extra-products__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-products__info {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .extra-products__price {
+    padding-left: 50px;
+  }
+
+  .extra-products__list {
+    margin-bottom: 60px;
+  }
+
+  .extra-products__present {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 100%;
+    width: 708px;
+    height: 200px;
+  }
+
+  .extra-products__present-icon {
+    width: 354px;
+  }
+
+  .extra-products__present-text {
+    width: 175px;
+    padding-right: 120px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktops) {
+  .extra-products__container {
+    @include padd-desktop();
+    width: $desktops - 80px;
+    margin: 0 auto;
+  }
+
+  .extra-products__title {
+    @include padd-desktop();
+  }
+
+  .extra-products__block {
+    @include padd-desktop();
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-products__list {
+    width: 820px;
+  }
+
+  .extra-products__present {
+    width: 245px;
+  }
+
+  .extra-products__btn {
+    width: 210px;
+  }
+}

@@ -4,3 +4,17 @@
   width: $mobiles;
   margin: 0 auto;
 }
+
+@media (min-width: $tablets) {
+  .page-main__example {
+    width: $tablets;
+    background-color: $bgr;
+  }
+}
+
+@media (min-width: $desktops) {
+  .page-main__example {
+    width: $desktops;
+    margin-top: 40px;
+  }
+}
