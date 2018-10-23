@@ -1,7 +1,8 @@
 .programs__block {
-  @include padd-mobile();
+  /*@include padd-mobile();*/
   background-color: $bg-lite-grey;
   margin-bottom: 20px;
+  padding: 0 40px;
 }
 
 .programs__block-title {
@@ -10,15 +11,16 @@
   color: $color-text;
   display: block;
   position: relative;
-  padding-top: 25px;
+  padding-top: 30px;
   padding-left: 70px;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 50px;
-    top: 18px;
+    top: 22px;
     left: 10px;
     background: url("../img/icon-cat-slim.svg") 0 0 no-repeat;
     z-index: 1;
@@ -31,20 +33,23 @@
     height: 50px;
     border-radius: 50%;
     background-color: $green-btn;
-    top: 20px;
-    left: 0;
+    top: 25px;
+    left: 2px;
   }
 }
 
 .programs__block-title--pro::before {
+  content: "";
+  width: 65px;
+  height: 60px;
   background: url("../img/icon-cat-pro.svg") 0 0 no-repeat;
-  top: 30px;
-  left: -10px;
+  top: 35px;
+  left: -6px;
 }
 
 .programs__block-text {
   @include p-text();
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   border-bottom: 1px solid $color-d9;
 }
 
@@ -79,31 +84,40 @@
     .programs__block {
       background: none;
       min-height: 300px;
-      padding-right: 300px;
+      padding: 10px 270px 10px 55px;
+      margin-bottom: 80px;
+
+      &-pro {
+        padding-right: 305px;
+        padding-bottom: 0;
+        margin-bottom: 45px;
+      }
     }
 
     .programs__block-title {
-      padding-left: 0;
+      @include m-p-clear();
       font-size: 36px;
+      margin-bottom: 25px;
 
       &::before {
         width: 200px;
         height: 200px;
-        top: 10px;
-        left: 475px;
+        top: 0;
+        left: 420px;
       }
 
       &::after {
         width: 200px;
         height: 200px;
-        left: 445px;
+        left: 390px;
+        top: 15px;
       }
 
       &--pro::before {
         width: 272px;
         height: 272px;
-        top: 50px;
-        left: 405px;
+        top: 60px;
+        left: 356px;
       }
     }
 
@@ -111,11 +125,17 @@
       font-size: 16px;
       line-height: 24px;
       border-bottom: none;
+      margin-bottom: 27px;
     }
 
     .programs__block-link {
       font-size: 20px;
       line-height: 20px;
+
+      &::after {
+        margin-left: 20px;
+        top: 4px;
+      }
     }
   }
 }

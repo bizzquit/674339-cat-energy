@@ -3,6 +3,7 @@
   color: $bgr;
   text-align: center;
   padding: 23px 0;
+  padding-bottom: 15px;
 }
 
 .promo__text {
@@ -21,7 +22,7 @@
   width: 280px;
   height: 271px;
   background: url("../img/index-can-mobile@1x.png") 0 center no-repeat;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .promo__block-link {
@@ -37,7 +38,7 @@
   .promo {
     @include padd-tablets();
     min-height: 820px;
-    background: url("../img/index-can-tablet@1x.jpg") 25px 205px no-repeat;
+    background: url("../img/index-can-tablet@1x.jpg") 25px bottom no-repeat;
     margin-bottom: 80px;
   }
 
@@ -46,11 +47,10 @@
     width: 430px;
     padding-left: 90px;
     min-height: 240px;
-
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 
     &::after {
-      /*@include visually-hidden();*/
       display: none;
     }
   }
@@ -60,6 +60,7 @@
     line-height: 60px;
     text-align: left;
     color: $color-text;
+    padding-bottom: 20px;
   }
 
   .promo__text {

@@ -1,11 +1,13 @@
 .example__title {
   @include h2-size-font();
   @include padd-mobile();
+  margin-bottom: 21px;
 }
 
 .example__text {
   @include p-text();
   @include padd-mobile();
+  margin-bottom: 25px;
 }
 
 .example__stat {
@@ -54,21 +56,25 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-text;
+  text-transform: uppercase;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin: 33px 0;
 }
+
 
 @media (min-width: $tablets) {
   .example__title {
     @include padd-tablets();
     font-size: 60px;
+    margin-bottom: 61px;
   }
 
   .example__text {
     @include padd-tablets();
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
   }
 
   .example__stat {
@@ -79,7 +85,7 @@
   }
 
   .example__stat-items {
-    width: 50%;
+    width: 52%;
   }
 
   .example__stat-item {
@@ -94,10 +100,17 @@
     text-align: right;
   }
 
+  .example__cost-block--text {
+    @include m-p-clear();
+    margin-top: 10px;
+    line-height: 25px;
+  }
+
   .example__stat-result {
     font-size: 30px;
     line-height: 37.02px;
     text-transform: uppercase;
+    padding-bottom: 15px;
   }
 
   .example__stat-value {

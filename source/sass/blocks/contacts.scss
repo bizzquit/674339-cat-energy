@@ -34,6 +34,7 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
 
   .contacts__title {
@@ -50,6 +51,7 @@
     width: auto;
     height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
+    margin-bottom: 50px;
   }
 }
 

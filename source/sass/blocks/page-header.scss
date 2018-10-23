@@ -7,11 +7,11 @@
 
 .page-header__wrapper {
   @include padd-mobile();
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
   position: relative;
-  min-height: 66px;
+  min-height: 65px;
   border-bottom: 1px solid $lite-grey;
 }
 
@@ -26,8 +26,8 @@
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 22px;
+  right: 16px;
   border: none;
 
   &:hover {
@@ -78,9 +78,10 @@
   }
 
   .page-header__wrapper {
-    @include padd-tablets();
+    padding: 24px 30px;
     display: flex;
     justify-content: space-between;
+    border-bottom: none;
   }
 
   .page-header__main-menu {
@@ -88,7 +89,7 @@
   }
 
   .page-header__logo {
-    margin-right: 75px;
+    margin-right: 70px;
   }
 
   .page-header__btn {
@@ -112,7 +113,7 @@
     color: $color-text-2;
     font-size: 18px;
     line-height: 24.86px;
-    padding: 10px 0;
+    padding: 6px 0;
     border-bottom: none;
   }
 
