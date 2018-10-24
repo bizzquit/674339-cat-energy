@@ -89,7 +89,7 @@
   }
 
   .page-header__logo {
-    margin-right: 70px;
+    margin-right: 90px;
   }
 
   .page-header__btn {
@@ -139,7 +139,7 @@
       width: 50%;
       right: 0;
       top: 0;
-      min-height: 690px;
+      min-height: 695px;
       background-color: #65a93c;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position-x: right;
@@ -154,6 +154,8 @@
     width: $desktops - 80px;
     margin: 0 auto;
     border: none;
+    min-height: 175px;
+    margin-bottom: 25px;
   }
 
   .page-header__main-menu {

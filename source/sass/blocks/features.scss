@@ -50,6 +50,8 @@
 @media (min-width: $tablets) {
   .features {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 
@@ -108,5 +110,22 @@
     @include padd-desktop ();
     width: $desktops - 80px;
     margin: 0 auto;
+  }
+
+  .features__item {
+    width: 245px;
+    min-height: 194px;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-right: 50px;
+    position: relative;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &::before {
+      margin-top: -95px;
+    }
   }
 }

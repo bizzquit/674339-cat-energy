@@ -85,26 +85,34 @@
 
 @media (min-width: $desktops) {
   .promo {
-    min-height: 605px;
+    min-height: 535px;
   }
 
   .page-header__promo {
     @include padd-desktop();
     background: none;
     max-width: $desktops - 80px;
-
     margin: 0 auto;
   }
 
-  .promo__text-block::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 552px;
-    height: 499px;
-    background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
-    background-size: 550px;
-    top: 50px;
-    left: 435px;
+  .promo__text-block {
+    padding-left: 80px;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
+      background-size: 550px;
+      top: 110px;
+      left: 560px;
+    }
+  }
+
+  .promo__block-link {
+    padding-left: 80px;
   }
 }

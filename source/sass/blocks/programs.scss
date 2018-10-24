@@ -78,6 +78,8 @@
 @media (min-width: $tablets) {
   .programs {
     @include padd-tablets();
+    width: $tablets - 60px;
+    margin: 0 auto;
   }
 
   @media (max-width: 1299px) {
@@ -88,7 +90,7 @@
       margin-bottom: 80px;
 
       &-pro {
-        padding-right: 305px;
+        padding-right: 310px;
         padding-bottom: 0;
         margin-bottom: 45px;
       }
@@ -149,16 +151,64 @@
     @include padd-desktop ();
     width: $desktops - 80px;
     margin: 0 auto;
+    margin-bottom: 55px;
   }
 
   .programs__block {
-    width: 40%;
+    max-width: 472px;
     padding: 0 50px;
+    min-height: 373px;
   }
 
   .programs__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .programs__block-title {
+    font-size: 36px;
+    margin-bottom: 70px;
+    padding-left: 165px;
+    padding-top: 79px;
+
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 40px;
+      left: 15px;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      left: 2px;
+      top: 48px;
+    }
+
+    &--pro::before {
+      width: 133px;
+      height: 150px;
+      top: 70px;
+      left: -13px;
+    }
+  }
+
+  .programs__block-text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    padding-bottom: 18px;
+  }
+
+  .programs__block-link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 2px;
+
+    &::after {
+      margin-left: 22px;
+    }
   }
 }

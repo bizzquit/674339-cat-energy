@@ -64,14 +64,22 @@
 
 
 @media (min-width: $tablets) {
+  .example__block {
+    width: $tablets;
+    margin: 0 auto;
+  }
   .example__title {
     @include padd-tablets();
+    /*width: $tablets - 60px;
+    margin: 0 auto;*/
     font-size: 60px;
     margin-bottom: 61px;
   }
 
   .example__text {
     @include padd-tablets();
+    /*width: $tablets - 60px;
+    margin: 0 auto;*/
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
@@ -79,6 +87,8 @@
 
   .example__stat {
     @include padd-tablets();
+    /*width: $tablets - 60px;
+    margin: 0 auto;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -127,19 +137,38 @@
 }
 
 @media (min-width: $desktops) {
+  .example__block {
+    width: $desktops;
+    min-height: 590px;
+  }
+
   .example__title {
     @include padd-desktop();
-    max-width: 70%;
+    margin-bottom: 140px;
   }
 
   .example__text {
     @include padd-desktop();
-    max-width: 40%;
+    max-width: 465px;
+    margin-bottom: 70px;
   }
 
   .example__stat {
     @include padd-desktop();
     flex-direction: column;
+    position: relative;
+  }
+
+  .example__stat-value {
+    background-color: $color-f2;
+  }
+
+  .example__cost-block--text {
+    max-width: 450px;
+    min-width: 325px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
   }
 
   .example__stat-items {
@@ -147,8 +176,11 @@
   }
 
   .example__before-after {
-    width: 50%;
+    width: 650px;
     align-self: end;
     margin-top: -400px;
+    position: absolute;
+    bottom: -75px;
+    right: 51px;
   }
 }
