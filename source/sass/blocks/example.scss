@@ -68,6 +68,7 @@
     width: $tablets;
     margin: 0 auto;
   }
+
   .example__title {
     @include padd-tablets();
     /*width: $tablets - 60px;

@@ -47,7 +47,7 @@
 @media (min-width: $tablets) {
   .before-after {
     margin-top: 90px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-bottom: 70px;
   }
 
@@ -67,7 +67,7 @@
     border-bottom: 1px dotted $color-be;
 
     &:hover {
-    cursor: pointer;
+      cursor: pointer;
     }
   }
 

@@ -8,7 +8,7 @@
 @media (min-width: $tablets) {
   .page-main__example {
     width: 100%;
-    background-image: linear-gradient(#fff 0%, #fff 53%, $color-f2 53%);
+    background-image: linear-gradient($bgr 0%, $bgr 53%, $color-f2 53%);
     margin-bottom: 5px;
   }
 }
@@ -16,7 +16,7 @@
 @media (min-width: $desktops) {
   .page-main__example {
     width: 100%;
-    background-image: linear-gradient(#fff 0%, #fff 11.5%, $color-f2 11.5%);
+    background-image: linear-gradient($bgr 0%, $bgr 11.5%, $color-f2 11.5%);
     margin-bottom: 0;
   }
 }
