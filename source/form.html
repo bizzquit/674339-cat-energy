@@ -14,7 +14,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт-Энерджи">
+        <picture>
+          <source media="(min-width:1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg"  alt="Логотип Кэт-Энерджи">
+        </picture>
       </div>
       <nav class="page-header__main-menu">
         <button class="page-header__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>

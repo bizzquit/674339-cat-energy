@@ -1,13 +1,14 @@
 .extra-info__items {
   @include list-style-none();
   @include m-p-clear();
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .extra-info__item {
   display: flex;
   align-items: center;
-  min-height: 30px;
-  padding: 12px 0;
+  min-height: 41px;
 }
 
 @media (min-width: $tablets) {
