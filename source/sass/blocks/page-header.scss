@@ -134,6 +134,7 @@
     width: $desktops;
   }
 
+
   .page-header--index {
     width: 100%;
     position: relative;
@@ -166,8 +167,16 @@
     margin: 0 auto;
     border: none;
     min-height: 175px;
-    margin-bottom: 25px;
   }
+
+  .page-header__promo {
+    @include padd-desktop();
+    background: none;
+    max-width: $desktops - 80px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
 
   .page-header__main-menu {
     width: 570px;

@@ -109,12 +109,18 @@
 
   .form__center-container {
     @include padd-tablets();
-    width: $tablets - 60px;
+    width: $tablets - 138px;
     margin: 0 auto;
+  }
+
+  .form__text-item {
+    margin-bottom: 23px;
   }
 
   .form__data-cat {
     width: 100%;
+    margin-top: 65px;
+    margin-bottom: 75px;
   }
 
   .form__program-cat {
@@ -200,7 +206,7 @@
 
   .text-item__input {
     font-size: 20px;
-    padding-bottom: 10px;
+    padding: 16px 0 10px 16px;
 
     &::placeholder {
       font-size: 20px;
@@ -209,6 +215,7 @@
 
   .text-item__label {
     font-size: 20px;
+    margin-right: 20px;
   }
 
   .form__submit-block {

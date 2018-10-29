@@ -86,13 +86,8 @@
 @media (min-width: $desktops) {
   .promo {
     min-height: 535px;
-  }
-
-  .page-header__promo {
-    @include padd-desktop();
     background: none;
-    max-width: $desktops - 80px;
-    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .promo__text-block {

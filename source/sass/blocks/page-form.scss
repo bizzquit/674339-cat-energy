@@ -24,6 +24,7 @@
 @media (min-width: $tablets) {
   .page-form__container {
     @include m-p-clear();
+    margin-top: 30px;
   }
 
   .page-form__title-block {
@@ -32,20 +33,21 @@
     margin: 0 auto;
   }
 
+  .page-form__title {
+    margin-bottom: 52px;
+    font-size: 60px;
+  }
+
   .page-form__text-block {
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
   }
 
-  .page-form__title {
-    font-size: 60px;
-  }
-
   .page-form__text {
     font-size: 20px;
     line-height: 30px;
-    width: 300px;
+    min-width: 330px;
     padding-left: 40px;
   }
 
