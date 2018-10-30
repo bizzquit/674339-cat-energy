@@ -1,18 +1,18 @@
 .form__text-items {
   @include list-style-none();
   @include m-p-clear();
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .form__program-items {
   @include list-style-none();
   @include m-p-clear();
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .form__programs-item {
   margin: 15px 0;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .form__contact-items {
@@ -77,7 +77,6 @@
 .extra-item__label {
   @include oswald-regular();
   @include font-s-label();
-  margin-left: 15px;
 }
 
 .btn-block__button {
