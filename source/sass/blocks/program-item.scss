@@ -1,13 +1,10 @@
-.program-item__radio {
-  @include oswald-regular();
-  @include font-s-label();
-}
-
 .program-item__input {
   display: none;
 }
 
 .program-item__radio {
+  @include oswald-regular();
+  @include font-s-label();
   position: relative;
   display: flex;
   align-items: center;
@@ -49,6 +46,8 @@
   }
 
   .program-item__radio {
+    font-size: 20px;
+    line-height: 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -82,10 +81,5 @@
   .program-item__input:checked + .program-item__radio::after {
     background-color: $green-btn;
     background-position: center;
-  }
-
-  .program-item__radio {
-    font-size: 20px;
-    line-height: 20px;
   }
 }
