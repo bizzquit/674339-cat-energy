@@ -25,6 +25,7 @@
 @media (min-width: $tablets) {
   .page-footer {
     width: 100%;
+    background-color: $color-f2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -34,6 +35,7 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -58,5 +60,6 @@
   .page-footer__footer {
     @include padd-desktop();
     width: $desktops - 80px;
+    padding-top: 55px;
   }
 }

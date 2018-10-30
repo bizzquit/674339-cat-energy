@@ -11,7 +11,7 @@
 }
 
 .form__programs-item {
-  margin: 23px 0;
+  margin: 15px 0;
   padding-left: 20px;
 }
 
@@ -62,11 +62,6 @@
   @include font-s-label();
 }
 
-.program-item__radio {
-  @include oswald-regular();
-  @include font-s-label();
-}
-
 .text-item__input {
   @include border-input();
   width: 100%;
@@ -103,14 +98,28 @@
 }
 
 @media (min-width: $tablets) {
+  .form {
+    margin-bottom: 65px;
+  }
+
   .form__contact-items {
-    margin-top: 40px;
+    margin-top: 75px;
   }
 
   .form__center-container {
     @include padd-tablets();
     width: $tablets - 138px;
     margin: 0 auto;
+  }
+
+  .form__program-items {
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .form__programs-item {
+    display: flex;
+    align-items: center;
   }
 
   .form__text-item {
@@ -124,12 +133,14 @@
   }
 
   .form__program-cat {
+    @include m-p-clear();
     max-width: $tablets - 62px;
+    padding-left: 10px;
   }
 
   .form__contact-block {
     position: relative;
-    margin-top: 40px;
+    margin-top: 75px;
 
     &::before {
       content: "";
@@ -144,9 +155,13 @@
     }
   }
 
+  .form__contact-item {
+    margin-bottom: 25px;
+  }
+
   .form__comment {
     position: relative;
-    margin-top: 40px;
+    margin-top: 65px;
 
     &::before {
       content: "";
@@ -163,7 +178,7 @@
 
   .form__extra-info {
     position: relative;
-    margin-top: 40px;
+    margin-top: 63px;
 
     &::before {
       content: "";
@@ -189,14 +204,14 @@
 
   .btn-block {
     display: flex;
-    justify-content: space-between;
   }
 
   .btn-block__button {
     width: 285px;
-    min-height: 30px;
+    min-height: 50px;
     font-size: 20px;
     line-height: 20px;
+    margin-right: 60px;
   }
 
   .btn-block__text {
@@ -213,6 +228,20 @@
     }
   }
 
+  .text-item__input[type="tel"] {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 492px center;
+  }
+
+  .text-item__input[type="email"] {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 512px 20px;
+  }
+
   .text-item__label {
     font-size: 20px;
     margin-right: 20px;
@@ -220,7 +249,7 @@
 
   .form__submit-block {
     @include padd-tablets();
-    width: $tablets - 60px;
+    width: $tablets - 140px;
     margin: 0 auto;
   }
 }
@@ -235,29 +264,54 @@
   .form__center-container--data {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
   }
 
   .form__data-cat {
-    max-width: 45%;
+    max-width: 575px;
+    margin: 0;
   }
 
   .form__program-cat {
     width: 100%;
-    max-width: 45%;
+    max-width: 560px;
+    margin-top: 7px;
+  }
+
+  .form__contact-block {
+    margin-top: 18px;
   }
 
   .form__contact-items {
     display: flex;
     justify-content: space-between;
+    margin-top: 65px;
   }
 
   .form__contact-item {
-    width: 45%;
+    width: 570px;
+  }
+
+  .text-item__input[type="email"] {
+    background-position: 450px 19px;
+  }
+
+  .text-item__input[type="tel"] {
+    background-position: 427px center;
+  }
+
+  .form__comment {
+    margin-top: 45px;
   }
 
   .form__submit-block {
     @include padd-desktop();
     width: $desktops - 80px;
     margin: 0 auto;
+  }
+
+  .btn-block__button {
+    width: 570px;
+    margin-right: 80px;
   }
 }

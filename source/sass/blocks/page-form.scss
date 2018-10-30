@@ -62,6 +62,10 @@
 }
 
 @media (min-width: $desktops) {
+  .page-form__container {
+    margin-top: 0;
+  }
+
   .page-form__title-block {
     @include padd-desktop();
     width: $desktops - 80px;
@@ -72,5 +76,9 @@
     @include padd-desktop();
     width: $desktops - 80px;
     margin: 0 auto;
+  }
+
+  .page-form__text {
+    padding-left: 0;
   }
 }

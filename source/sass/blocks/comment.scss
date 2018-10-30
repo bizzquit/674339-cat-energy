@@ -16,10 +16,12 @@
 @media (min-width: $tablets) {
   .comment__text-input {
     width: 100%;
-    max-width: 693px;
+    max-width: 610px;
+    min-height: 150px;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 40px;
+    margin-top: 75px;
+    padding: 10px 0 15px 20px;
 
     &::placeholder {
       font-size: 20px;

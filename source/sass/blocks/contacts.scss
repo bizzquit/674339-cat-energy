@@ -57,7 +57,10 @@
     width: auto;
     height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
-    margin-bottom: 50px;
+  }
+
+  .contacts__contacts-map--index {
+    background-color: $bgr;
   }
 }
 

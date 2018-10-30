@@ -24,11 +24,41 @@
   }
 
   .extra-info__item {
-    width: 280px;
+    width: 285px;
+    margin: 15px 0;
   }
 
   .extra-item__label {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .extra-item__input {
+    display: none;
+  }
+
+  .extra-item__input--indicator {
+    display: block;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid $color-cd;
+    background: $bgr;
+  }
+
+  .extra-item__input:checked + .extra-item__input--indicator {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktops) {
+  .extra-info__items {
+    margin-bottom: 45px;
+  }
+
+  .extra-info__item {
+    width: 245px;
   }
 }

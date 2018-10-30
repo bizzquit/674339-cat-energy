@@ -7,10 +7,27 @@
   border-bottom: 1px solid $color-d9;
 }
 
+
+
 @media (min-width: $tablets) {
   .social-icons__items {
     width: 150px;
     padding: 20px 0;
     border: none;
+  }
+
+  .social-icons__item--vk {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-icons__item--inst {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-icons__item--fb {
+    width: 15px;
+    height: 20px;
   }
 }

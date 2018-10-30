@@ -1,0 +1,41 @@
+.program-item__radio {
+  @include oswald-regular();
+  @include font-s-label();
+}
+
+@media (min-width: $tablets) {
+  .program-item__input {
+    display: none;
+  }
+
+  .program-item__input--indicator {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid $color-cd;
+    background: $bgr;
+    margin-right: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $bgr;
+    }
+  }
+
+  .program-item__input:checked + .program-item__input--indicator::after {
+    background-color: $green-btn;
+    background-position: center;
+  }
+
+  .program-item__radio {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
