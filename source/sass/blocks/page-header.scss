@@ -108,7 +108,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: auto;
+    width: 440px;
+    flex-wrap: wrap;
   }
 
   .page-header__item a {
