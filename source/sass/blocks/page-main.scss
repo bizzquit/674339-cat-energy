@@ -5,6 +5,10 @@
   display: block;
 }
 
+.page-main--index {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablets) {
   .page-main {
     width: 100%;

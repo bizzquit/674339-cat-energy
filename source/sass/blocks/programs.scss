@@ -1,3 +1,7 @@
+.programs__container {
+  @include m-p-clear();
+}
+
 .programs__block {
   /*@include padd-mobile();*/
   background-color: $bg-lite-grey;
@@ -49,14 +53,15 @@
 
 .programs__block-text {
   @include p-text();
-  padding-bottom: 28px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $color-d9;
+  margin-bottom: 20px;
 }
 
 .programs__block-link {
   @include oswald-regular();
   line-height: 16px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;

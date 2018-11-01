@@ -1,25 +1,20 @@
 .page-footer {
   @include m-p-clear();
   width: 100%;
-}
-
-.contacts__contacts-items {
-  @include padd-mobile();
-  width: $mobiles - 40px;
-  margin: 0 auto;
+  background-color: $color-f2;
 }
 
 .page-footer__footer {
-  @include padd-mobile();
   width: $mobiles - 40px;
   margin: 0 auto;
 }
 
 .page-footer__logo {
   text-align: center;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   border-bottom: 1px solid $color-d9;
-  min-height: 45px;
+  min-height: 57px;
+  margin-top: 40px;
 }
 
 @media (min-width: $tablets) {

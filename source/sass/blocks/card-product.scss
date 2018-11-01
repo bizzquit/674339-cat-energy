@@ -1,5 +1,6 @@
 .card-product__image-block {
   /*width: 140px;*/
+  height: 140px;
 }
 
 .card-product__title {
@@ -14,6 +15,8 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-block-start: 15px;
+  margin-block-end: 15px;
 }
 
 .card-product__options {
@@ -31,16 +34,23 @@
   justify-content: space-between;
 }
 
+.card-product__info-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
 .card-product__info-parameter {
   display: inline;
-  width: 40%;
+  width: 50%;
 }
 
 .card-product__info-value {
   display: inline;
-  float: right;
+  /*float: right;*/
   text-align: right;
-  width: 40%;
+  margin-inline-start: 0;
+  width: 50%;
 
   &::after {
     content: "";

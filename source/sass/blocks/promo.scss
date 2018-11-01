@@ -2,8 +2,9 @@
   @include h1-size-font();
   color: $bgr;
   text-align: center;
-  padding: 23px 0;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  /*padding: 26px 0;*/
+  /*padding-bottom: 15px;*/
 }
 
 .promo__text {
@@ -14,6 +15,7 @@
   color: $bgr;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 25px;
 }
 
 .promo__text-block::after {

@@ -2,6 +2,7 @@
   @include h2-size-font();
   @include padd-mobile();
   color: $color-text;
+  letter-spacing: -0.3px;
 }
 
 .catalog__block {
@@ -13,12 +14,17 @@
   @include list-style-none();
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  /*margin-bottom: 20px;*/
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
 }
 
 .catalog__product {
   display: flex;
   justify-content: space-between;
+  min-height: 147.7px;
 }
 
 .catalog__block-all {
@@ -49,17 +55,23 @@
 
 .catalog__item-btn {
   @include a-btn();
-  margin-top: -4px;
+  margin-top: -2px;
+  padding-bottom: 10px;
+  min-height: 0;
 }
 
 .catalog__item {
   @include padd-mobile();
   border-bottom: 1px solid $color-ed;
-  padding-bottom: 24px;
+  min-height: 208px;
+
+  &:nth-child(even) {
+    min-height: 209px;
+  }
 }
 
 .catalog__item--more {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .catalog__image-all {

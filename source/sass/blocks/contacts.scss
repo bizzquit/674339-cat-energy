@@ -1,11 +1,21 @@
+.contacts__contacts-map {
+  background-color: $bgr;
+  padding-top: 6px;
+}
+
 .contacts__contacts-items {
-  @include padd-mobile();
+  width: $mobiles - 40px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  min-height: 85px;
+  align-items: start;
 }
 
 .contacts__title {
+  @include m-p-clear();
   @include oswald-regular();
+  letter-spacing: 0.6px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -13,6 +23,7 @@
 }
 
 .contacts__address {
+  @include m-p-clear();
   @include arial-regular();
   font-size: 14px;
   line-height: 20px;
@@ -21,8 +32,9 @@
 
 .contacts__map {
   width: auto;
-  height: 400px;
+  height: 360px;
   background-image: url("../img/bg-map-mobile@1x.png");
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablets) {
