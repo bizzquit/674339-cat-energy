@@ -10,7 +10,6 @@
   line-height: 24px;
   color: $color-text;
   margin: 0;
-  margin-top: 0px;
 
   &::after {
     content: "";
@@ -251,11 +250,11 @@
     width: 245px;
     margin-bottom: 65px;
     margin-top: 75px;
-    background-image: url(../img/gift-photo-desktop@1x.jpg);
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
   .extra-products__present-icon {
-     margin-top: 25px;
+    margin-top: 25px;
   }
 
   .extra-products__present-text {
