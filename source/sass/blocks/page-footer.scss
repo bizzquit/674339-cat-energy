@@ -30,9 +30,10 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
@@ -55,6 +56,6 @@
   .page-footer__footer {
     @include padd-desktop();
     width: $desktops - 80px;
-    padding-top: 55px;
+    padding-top: 30px;
   }
 }

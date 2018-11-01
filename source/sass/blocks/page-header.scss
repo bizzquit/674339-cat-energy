@@ -82,6 +82,7 @@
   }
 
   .page-header__wrapper {
+    width: auto;
     padding: 24px 30px;
     display: flex;
     flex-direction: row;
@@ -89,13 +90,13 @@
     border-bottom: none;
   }
 
-  .page-header__main-menu {
-    flex-grow: 1;
+  .page-header__items--open {
+    margin-left: 0;
   }
 
   .page-header__logo {
     width: 175px;
-    margin-right: 115px;
+    margin-right: 95px;
     margin-top: 0;
   }
 
@@ -176,13 +177,14 @@
     max-width: $desktops - 80px;
     margin: 0 auto;
     margin-top: 25px;
+    position: relative;
   }
 
 
   .page-header__main-menu {
     width: 570px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .page-header__items {

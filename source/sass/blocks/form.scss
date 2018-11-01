@@ -57,6 +57,10 @@
   margin-bottom: 45px;
 }
 
+.form-block {
+  padding-bottom: 10px;
+}
+
 .text-item__label {
   @include oswald-regular();
   @include font-s-label();
@@ -100,6 +104,9 @@
   .form {
     margin-bottom: 65px;
   }
+  .form-block {
+    margin-bottom: 10px;
+  }
 
   .form__contact-items {
     margin-top: 75px;
@@ -134,7 +141,7 @@
   .form__program-cat {
     @include m-p-clear();
     max-width: $tablets - 62px;
-    padding-left: 10px;
+    padding-left: 30px;
   }
 
   .form__contact-block {
@@ -265,6 +272,12 @@
     justify-content: space-between;
     margin-top: 60px;
   }
+  /*
+
+  .form-block {
+    margin-bottom: 21px;
+  }
+  */
 
   .form__data-cat {
     max-width: 575px;
@@ -273,8 +286,9 @@
 
   .form__program-cat {
     width: 100%;
-    max-width: 560px;
+    max-width: 540px;
     margin-top: 7px;
+    margin-bottom: 45px;
   }
 
   .form__contact-block {

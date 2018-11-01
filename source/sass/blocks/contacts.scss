@@ -34,7 +34,6 @@
   width: auto;
   height: 360px;
   background-image: url("../img/bg-map-mobile@1x.png");
-  margin-bottom: 30px;
 }
 
 @media (min-width: $tablets) {
@@ -46,6 +45,7 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
+    min-height: 175px;
   }
 
   .contacts__title {
@@ -79,18 +79,27 @@
 @media (min-width: $desktops) {
   .contacts__contacts-map {
     position: relative;
+    margin-top: -20px;
+    padding: 0;
   }
 
   .contacts__contacts-items {
-    width: 450px;
+    width: 510px;
     position: absolute;
-    top: 100px;
-    left: 116px;
+    top: 110px;
+    left: 110px;
+    min-height: 200px;
     background: $bgr;
   }
 
   .contacts__address {
-    padding-right: 0;
+    padding-right: 50px;
     text-align: left;
+    padding-top: 65px;
+  }
+
+  .contacts__title {
+    padding-left: 45px;
+    padding-top: 67px;
   }
 }

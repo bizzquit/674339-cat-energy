@@ -129,13 +129,15 @@
   .catalog__item {
     width: 244px;
     padding: 40px;
-    margin-top: 115px;
+    margin-top: 135px;
+    margin-bottom: 0;
     background-color: $color-f2;
+    min-height: 355px;
   }
 
   .catalog__item--more {
     background: none;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .catalog__product {

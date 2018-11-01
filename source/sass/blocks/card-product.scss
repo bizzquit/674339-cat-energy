@@ -65,6 +65,7 @@
 @media (min-width: $tablets) {
   .card-product__info {
     width: 100%;
+    margin-top: 10px;
   }
 
   .card-product__title {
@@ -79,13 +80,14 @@
     min-height: 208px;
     display: flex;
     align-items: end;
-    margin-top: -100px;
+    align-items: flex-end;
+    margin-top: -118px;
     margin-bottom: 10px;
   }
 
   .card-product__title-value {
     font-size: 20px;
-    width: 135px;
+    width: 140px;
   }
 
   .card-product__options {
@@ -106,6 +108,7 @@
     display: block;
     position: relative;
     margin-bottom: 16px;
+    margin-top: 0.5px;
 
     &::after {
       content: "";
@@ -121,6 +124,7 @@
 
   .card-product__info-value {
     width: 40%;
+    margin-top: 0;
   }
 }
 

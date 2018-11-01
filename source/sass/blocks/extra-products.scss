@@ -181,23 +181,27 @@
     background-size: 100%;
     max-width: 708px;
     min-height: 200px;
-    margin-bottom: 82px;
+    margin-bottom: 90px;
   }
 
   .extra-products__present-icon {
-    width: 354px;
+    width: 240px;
+    margin-top: 0;
   }
 
   .extra-products__present-text {
-    width: 175px;
-    padding-right: 120px;
+    width: 170px;
+    padding-right: 115px;
     line-height: 20px;
+    text-align: left;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: $desktops) {
   .extra-products {
-    margin-top: 75px;
+    margin-top: 70px;
+    padding-bottom: 10px;
   }
 
   .extra-products__container {
@@ -247,10 +251,17 @@
     width: 245px;
     margin-bottom: 65px;
     margin-top: 75px;
+    background-image: url(../img/gift-photo-desktop@1x.jpg);
+  }
+
+  .extra-products__present-icon {
+     margin-top: 25px;
   }
 
   .extra-products__present-text {
     padding-right: 0;
+    text-align: center;
+    padding-top: 0;
   }
 
   .extra-products__btn {
