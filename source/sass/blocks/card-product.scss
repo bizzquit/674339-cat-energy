@@ -7,6 +7,14 @@
   text-decoration: none;
   display: block;
   width: 80px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card-product__title-value {

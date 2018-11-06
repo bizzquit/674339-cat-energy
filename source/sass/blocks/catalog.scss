@@ -58,6 +58,14 @@
   margin-top: -2px;
   padding-bottom: 10px;
   min-height: 0;
+
+  &:hover {
+    background-color: $green-btn-hvr;
+  }
+
+  &:active {
+    color: rgba($bgr, 0.3);
+  }
 }
 
 .catalog__item {

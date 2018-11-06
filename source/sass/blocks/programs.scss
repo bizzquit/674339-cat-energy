@@ -70,13 +70,27 @@
   position: relative;
   min-height: 35px;
 
+
   &::after {
     content: "";
     width: 25px;
     height: 16px;
-    background: url("../img/icon-right-arrow-verylong.svg") 0 center no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") 0 2px no-repeat;
     position: absolute;
     margin-left: 10px;
+  }
+
+  &:hover::after {
+    width: 35px;
+    background-position: 0 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

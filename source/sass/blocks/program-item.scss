@@ -9,6 +9,10 @@
   display: flex;
   align-items: center;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -32,6 +36,18 @@
     left: 8px;
     border-radius: 50%;
     background-color: $bgr;
+  }
+
+  &:hover::after {
+    background-color: $green-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 

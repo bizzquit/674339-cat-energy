@@ -67,9 +67,29 @@
 }
 
 .text-item__input {
-  @include border-input();
+  @include oswald-regular();
+  @include font-s-label();
+  color: $color-text-4;
+  outline: none;
+  border: 1px solid rgba($color-cd, 0.5);
   width: 100%;
   padding: 14px 0 14px 13px;
+
+  &:hover {
+    border: 1px solid $color-cd;
+  }
+
+  &:active {
+    border: 2px solid $color-text-4;
+  }
+
+  &:focus {
+    border: 2px solid $color-text-4;
+  }
+
+  &:invalid {
+    border: 2px solid $color-invalid;
+  }
 
   &::placeholder {
     @include oswald-regular();
@@ -90,6 +110,14 @@
   min-height: 40px;
   letter-spacing: 1px;
   margin-bottom: 7px;
+
+  &:hover {
+    background-color: $green-btn-hvr;
+  }
+
+  &:active {
+    color: rgba($bgr, 0.3);
+  }
 }
 
 .btn-block__text {
@@ -98,6 +126,20 @@
   line-height: 16px;
   color: $color-text-4;
   text-align: center;
+}
+
+.text-item__input[type="tel"] {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 160px center;
+}
+
+.text-item__input[type="email"] {
+  background-image: url("../img/icon-mail.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: 175px 15px;
 }
 
 @media (min-width: $tablets) {
@@ -236,17 +278,11 @@
   }
 
   .text-item__input[type="tel"] {
-    background-image: url("../img/icon-phone.svg");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 492px center;
+    background-position: 475px center;
   }
 
   .text-item__input[type="email"] {
-    background-image: url("../img/icon-mail.svg");
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: 512px 20px;
+    background-position: 490px 20px;
   }
 
   .text-item__label {
@@ -273,12 +309,6 @@
     justify-content: space-between;
     margin-top: 60px;
   }
-  /*
-
-  .form-block {
-    margin-bottom: 21px;
-  }
-  */
 
   .form__data-cat {
     max-width: 575px;
@@ -307,11 +337,11 @@
   }
 
   .text-item__input[type="email"] {
-    background-position: 450px 19px;
+    background-position: 435px 17px;
   }
 
   .text-item__input[type="tel"] {
-    background-position: 427px center;
+    background-position: 420px center;
   }
 
   .form__comment {

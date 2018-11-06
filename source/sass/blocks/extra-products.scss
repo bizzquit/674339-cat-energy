@@ -47,6 +47,14 @@
   line-height: 16px;
   color: $color-text-2;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .extra-products__info {
@@ -62,6 +70,14 @@
   @include a-btn();
   margin-top: 0;
   margin-bottom: 15px;
+
+  &:hover {
+    background-color: $green-btn-hvr;
+  }
+
+  &:active {
+    color: rgba($bgr, 0.3);
+  }
 }
 
 .extra-products__present {

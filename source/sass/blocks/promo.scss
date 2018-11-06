@@ -39,9 +39,9 @@
 @media (min-width: $tablets) {
   .promo {
     @include padd-tablets();
-    min-height: 820px;
+    min-height: 830px;
     background: url("../img/index-can-tablet@1x.jpg") 30px bottom no-repeat;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   .promo__text-block {
@@ -85,6 +85,14 @@
     line-height: 20px;
     min-height: 37px;
     padding-top: 15px;
+
+    &:hover {
+      background-color: $green-btn-hvr;
+    }
+
+    &:active {
+      color: rgba($bgr, 0.3);
+    }
   }
 }
 
@@ -108,7 +116,7 @@
       background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
       background-size: 550px;
       top: -90px;
-      left: 38%;
+      left: 37.5%;
     }
   }
 
