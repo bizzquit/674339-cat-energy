@@ -100,10 +100,15 @@
           <p class="example__cost-block example__cost-block--text"><span>Затраты на питание:</span> <span>15 000 руб.</span></p>
           <div class="example__before-after before-after">
             <div class="before-after__image">
-              <picture>
+              <picture class="before-after__image--before">
                 <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png">
                 <source media="(min-width:768px)" srcset="img/before-tablet@1x.png">
                 <img src="img/before-mobile@1x.png" alt="Фото кота До и После">
+              </picture>
+              <picture class="before-after__image--after">
+                <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png">
+                <source media="(min-width:768px)" srcset="img/after-tablet@1x.png">
+                <img src="img/after-mobile@1x.png" alt="Фото кота До и После">
               </picture>
             </div>
             <div class="before-after__status">
@@ -162,6 +167,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/after-before.js"></script>
   <script src="js/picturefill.js"></script>
   <script src="js/script.js"></script>
 </body>
