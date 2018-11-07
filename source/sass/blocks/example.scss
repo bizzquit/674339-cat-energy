@@ -71,16 +71,12 @@
 
   .example__title {
     @include padd-tablets();
-    /*width: $tablets - 60px;
-    margin: 0 auto;*/
     font-size: 60px;
     margin-bottom: 61px;
   }
 
   .example__text {
     @include padd-tablets();
-    /*width: $tablets - 60px;
-    margin: 0 auto;*/
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
@@ -88,8 +84,6 @@
 
   .example__stat {
     @include padd-tablets();
-    /*width: $tablets - 60px;
-    margin: 0 auto;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

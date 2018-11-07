@@ -6,11 +6,9 @@
 }
 
 .page-header__wrapper {
-  /*@include padd-mobile();*/
   @include width-mobile();
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   align-items: center;
   position: relative;
   min-height: 65px;
@@ -21,14 +19,14 @@
   width: 192px;
   align-self: start;
   margin-top: 13px;
-}
 
-.page-header__logo-link:hover {
-  opacity: 0.8;
-}
+  &-link:hover {
+    opacity: 0.8;
+  }
 
-.page-header__logo-link:active {
-  opacity: 0.6;
+  &-link:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__btn {

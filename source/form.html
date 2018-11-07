@@ -50,7 +50,7 @@
               <ul class="form__text-items">
                 <li class="form__text-item text-item">
                   <label for="cat-name" class="text-item__label">Имя:*</label>
-                  <input type="text" name="cat-name" id="cat-name" class="text-item__input" placeholder="Барсик">
+                  <input type="text" name="cat-name" id="cat-name" class="text-item__input" placeholder="Барсик" onBlur="val();">
                 </li>
                 <li class="form__text-item text-item">
                   <label for="cat-weight" class="text-item__label">Вес (кг):*</label>
@@ -67,15 +67,15 @@
               <ul class="form__program-items">
                 <li class="form__programs-item program-item">
                   <input type="radio" name="program" id="lose-weight" class="program-item__input" checked>
-                  <label for="lose-weight" class="program-item__radio">Похудение</label>
+                  <label for="lose-weight" class="program-item__radio" tabindex="0">Похудение</label>
                 </li>
                 <li class="form__programs-item program-item">
                   <input type="radio" name="program" id="add-weight" class="program-item__input">
-                  <label for="add-weight" class="program-item__radio">Набор массы</label>
+                  <label for="add-weight" class="program-item__radio" tabindex="0">Набор массы</label>
                 </li>
                 <li class="form__programs-item program-item">
                   <input type="radio" name="program" id="advice" class="program-item__input">
-                  <label for="advice" class="program-item__radio">Не знаю (Нужен ваш совет)</label>
+                  <label for="advice" class="program-item__radio" tabindex="0">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
@@ -112,19 +112,19 @@
               <ul class="extra-info__items">
                 <li class="extra-info__item extra-item">
                   <input type="checkbox" id="sugar" name="sugar" class="extra-item__input extra-item__input--sugar" checked>
-                  <label for="sugar" class="extra-item__label extra-item__label--sugar">Сахарозаменитель</label>
+                  <label for="sugar" class="extra-item__label extra-item__label--sugar" tabindex="0">Сахарозаменитель</label>
                 </li>
                 <li class="extra-info__item extra-item">
                   <input type="checkbox" id="water" name="water" class="extra-item__input extra-item__input--water">
-                  <label for="water" class="extra-item__label extra-item__label--water">Питьевая вода</label>
+                  <label for="water" class="extra-item__label extra-item__label--water" tabindex="0">Питьевая вода</label>
                 </li>
                 <li class="extra-info__item extra-item">
                   <input type="checkbox" id="milk" name="milk" class="extra-item__input extra-item__input--milk">
-                  <label for="milk" class="extra-item__label extra-item__label--milk">Молоко</label>
+                  <label for="milk" class="extra-item__label extra-item__label--milk" tabindex="0">Молоко</label>
                 </li>
                 <li class="extra-info__item extra-item">
                   <input type="checkbox" id="vitamin" name="vitamin" class="extra-item__input extra-item__input--vitamin">
-                  <label for="vitamin" class="extra-item__label extra-item__label--vitamin">Витамины</label>
+                  <label for="vitamin" class="extra-item__label extra-item__label--vitamin" tabindex="0">Витамины</label>
                 </li>
               </ul>
             </div>
@@ -157,7 +157,7 @@
     <!--логотип-->
     <div class="page-footer__footer">
       <div class="page-footer__logo">
-        <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
+        <a class="page-footer__logo-link"  href="index.html"><img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании"></a>
       </div>
       <section class="page-footer__social-icons social-icons">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -177,6 +177,7 @@
   </footer>
   <script src="js/picturefill.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/valid.js"></script>
 </body>
 
 </html>

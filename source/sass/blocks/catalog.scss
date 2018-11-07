@@ -14,7 +14,6 @@
   @include list-style-none();
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 20px;*/
 
   &:first-child {
     border-top: 1px solid #ededed;
@@ -93,7 +92,19 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-text-4;
-  background-color: $bgr;
+  background-color: $color-f2;
+
+  &:hover {
+    background-color: $color-ed;
+  }
+
+  &:active {
+    color: rgba($color-text-4, 0.3);
+  }
+
+  &:focus {
+    color: rgba($color-text-4, 0.3);
+  }
 }
 
 @media (min-width: $tablets) {

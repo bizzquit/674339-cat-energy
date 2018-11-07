@@ -105,9 +105,23 @@
     border-radius: 50%;
     top: -14px;
     left: -15px;
+    box-shadow: 0 2px 5px 0 rgba($black, 0.15);
 
     &:hover {
       cursor: pointer;
+      box-shadow: 0 3px 5px 0 rgba($black, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
+      border: 2px solid $green-btn;
+      width: 30px;
+      height: 30px;
+    }
+
+    &:focus {
+      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
+      border: 2px solid $green-btn;
     }
 
     &::before {
