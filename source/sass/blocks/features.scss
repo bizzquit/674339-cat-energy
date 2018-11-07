@@ -1,18 +1,22 @@
 .features__title {
-  @include padd-mobile();
+  @include m-p-clear();
   @include h2-size-font();
   color: $color-text;
+  padding: 0 20px;
+  margin-bottom: 30px;
 }
 
 .features__items {
   @include list-style-none();
   @include padd-mobile();
+  margin-bottom: 67px;
 }
 
 .features__item {
   padding-left: 80px;
   display: block;
   position: relative;
+  margin-bottom: 25px;
 
   &::before {
     content: "";
@@ -46,13 +50,16 @@
 @media (min-width: $tablets) {
   .features {
     @include padd-tablets();
-    margin-bottom: 30px;
+    width: $tablets - 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .features__title {
+    @include m-p-clear();
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
   }
 
   .features__items {
@@ -60,22 +67,42 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    counter-reset: number;
   }
 
   .features__item {
-    width: 250px;
+    width: 273px;
+    min-height: 194px;
     padding-left: 0;
-    padding-top: 80px;
+    padding-top: 97px;
     padding-right: 50px;
+    position: relative;
 
     &::before {
-      margin-top: -60px;
+      margin-top: -93px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      @include oswald-regular();
+      counter-increment: number;
+      content: counter(number);
+      font-size: 281.07px;
+      line-height: 281.07px;
+      color: $color-f2;
+      display: block;
+      position: absolute;
+      top: -25px;
+      left: 105px;
+      z-index: -1;
     }
   }
 
   .features__item-text {
     font-size: 16px;
     line-height: 24px;
+    max-width: 245px;
   }
 }
 
@@ -84,5 +111,22 @@
     @include padd-desktop ();
     width: $desktops - 80px;
     margin: 0 auto;
+  }
+
+  .features__item {
+    width: 245px;
+    min-height: 194px;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-right: 50px;
+    position: relative;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &::before {
+      margin-top: -95px;
+    }
   }
 }

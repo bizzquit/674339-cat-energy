@@ -2,7 +2,7 @@
   @include h1-size-font();
   color: $bgr;
   text-align: center;
-  padding: 23px 0;
+  padding-top: 30px;
 }
 
 .promo__text {
@@ -13,6 +13,7 @@
   color: $bgr;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 25px;
 }
 
 .promo__text-block::after {
@@ -21,7 +22,7 @@
   width: 280px;
   height: 271px;
   background: url("../img/index-can-mobile@1x.png") 0 center no-repeat;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .promo__block-link {
@@ -36,21 +37,20 @@
 @media (min-width: $tablets) {
   .promo {
     @include padd-tablets();
-    min-height: 820px;
-    background: url("../img/index-can-tablet@1x.jpg") 25px 205px no-repeat;
-    margin-bottom: 80px;
+    min-height: 830px;
+    background: url("../img/index-can-tablet@1x.jpg") 30px bottom no-repeat;
+    margin-bottom: 70px;
   }
 
   .promo__text-block {
     display: block;
-    width: 430px;
+    width: 450px;
     padding-left: 90px;
     min-height: 240px;
-
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 
     &::after {
-      /*@include visually-hidden();*/
       display: none;
     }
   }
@@ -60,6 +60,8 @@
     line-height: 60px;
     text-align: left;
     color: $color-text;
+    padding-bottom: 30px;
+    padding-top: 25px;
   }
 
   .promo__text {
@@ -67,6 +69,8 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .promo__block-link {
@@ -79,31 +83,42 @@
     line-height: 20px;
     min-height: 37px;
     padding-top: 15px;
+
+    &:hover {
+      background-color: $green-btn-hvr;
+    }
+
+    &:active {
+      color: rgba($bgr, 0.3);
+    }
   }
 }
 
 @media (min-width: $desktops) {
   .promo {
-    min-height: 605px;
-  }
-
-  .page-header__promo {
-    @include padd-desktop();
+    min-height: 535px;
     background: none;
-    max-width: $desktops - 80px;
-
-    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
-  .promo__text-block::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 552px;
-    height: 499px;
-    background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
-    background-size: 550px;
-    top: 50px;
-    left: 435px;
+  .promo__text-block {
+    padding-left: 80px;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
+      background-size: 550px;
+      top: -90px;
+      left: 37.5%;
+    }
+  }
+
+  .promo__block-link {
+    padding-left: 80px;
   }
 }

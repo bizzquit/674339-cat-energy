@@ -5,13 +5,18 @@
   display: block;
 }
 
+.page-main--index {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablets) {
   .page-main {
     width: 100%;
   }
 
   .page-main--index {
-    width: $tablets;
+    width: 100%;
+    margin-bottom: 17px;
   }
 }
 

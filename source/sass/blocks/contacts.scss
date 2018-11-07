@@ -1,10 +1,19 @@
+.contacts__contacts-map {
+  background-color: $bgr;
+  padding-top: 4px;
+}
+
 .contacts__contacts-items {
-  @include padd-mobile();
+  width: $mobiles - 40px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  min-height: 85px;
+  align-items: start;
 }
 
 .contacts__title {
+  @include m-p-clear();
   @include oswald-regular();
   font-size: 16px;
   line-height: 20px;
@@ -13,6 +22,7 @@
 }
 
 .contacts__address {
+  @include m-p-clear();
   @include arial-regular();
   font-size: 14px;
   line-height: 20px;
@@ -20,9 +30,42 @@
 }
 
 .contacts__map {
-  width: auto;
-  height: 400px;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  position: relative;
+  max-width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 170px;
+    left: 50%;
+    width: 62px;
+    height: 53px;
+    margin-left: -31px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    z-index: 1;
+
+    @media (min-width: $tablets) {
+      bottom: 144px;
+      width: 124px;
+      height: 106px;
+      margin-left: -62px;
+    }
+
+    @media (min-width: $desktops) {
+      margin-left: 278px;
+    }
+  }
+
+  .contacts__map-image {
+    width: 100%;
+    position: relative;
+  }
 }
 
 @media (min-width: $tablets) {
@@ -34,35 +77,66 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
+    min-height: 175px;
+    z-index: 1;
   }
 
   .contacts__title {
     width: 165px;
     padding: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text;
   }
 
   .contacts__address {
     width: 165px;
     padding: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-4;
+    text-align: right;
+  }
+
+  .contacts__city {
+    padding-top: 20px;
+    display: block;
   }
 
   .contacts__map {
     width: auto;
-    height: 400px;
-    background-image: url("../img/bg-map-tablet@1x.png");
+    max-height: 400px;
+  }
+
+  .contacts__contacts-map--index {
+    background-color: $bgr;
   }
 }
 
 @media (min-width: $desktops) {
   .contacts__contacts-map {
     position: relative;
+    margin-top: -20px;
+    padding: 0;
   }
 
   .contacts__contacts-items {
-    width: 450px;
+    width: 510px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 100px;
+    left: 110px;
+    min-height: 200px;
     background: $bgr;
+  }
+
+  .contacts__address {
+    padding-right: 50px;
+    text-align: left;
+    padding-top: 65px;
+  }
+
+  .contacts__title {
+    padding-left: 45px;
+    padding-top: 67px;
   }
 }

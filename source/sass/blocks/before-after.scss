@@ -1,5 +1,10 @@
+.before-after {
+  margin-bottom: 0;
+}
+
 .before-after__image {
   margin-left: -20px;
+  margin-bottom: 32px;
 }
 
 .before-after__status {
@@ -7,23 +12,167 @@
   display: flex;
   justify-content: space-between;
   width: auto;
+  padding: 0 25px;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .before-after__block {
-  width: 50%;
-  min-height: 50px;
+  width: 30%;
+  min-height: 53px;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.before-after__block--after::after {
+.before-after__indicator {
   content: "";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85px;
+  height: 15px;
+  border: 1px solid $color-cd;
+  border-radius: 20px;
+  background-color: $bgr;
+}
+
+.before-after__indicator-active {
+  background-color: $green-btn;
+  margin-left: 5px;
+  width: 35px;
+  height: 6px;
+  border-radius: 20px;
+}
+
+.before-after__image-after {
+  display: none;
 }
 
 @media (min-width: $tablets) {
+  .before-after {
+    margin-top: 90px;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+  }
+
   .before-after__image {
+    width: 705px;
+    height: 517px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  .before-after__block {
+    width: 50px;
+    display: inline;
+    font-size: 20px;
+    min-height: 25px;
+    border-bottom: 1px dotted $color-be;
+  }
+
+  .before-after__block--before {
+    margin-left: 43px;
+  }
+
+  .before-after__block--after {
+    margin-right: 77px;
+  }
+
+  .before-after__indicator {
+    width: 425px;
+    height: 6px;
+    border: none;
+    border-radius: 20px;
+    background-color: $color-dc;
+    position: relative;
+    margin-top: 8px;
+  }
+
+  .before-after__indicator-left {
+    position: absolute;
+    display: flex;
+    background-color: $bgr;
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $color-cd;
+    border-radius: 50%;
+    top: -14px;
+    left: -15px;
+    box-shadow: 0 2px 5px 0 rgba($black, 0.15);
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 3px 5px 0 rgba($black, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
+      border: 2px solid $green-btn;
+      width: 30px;
+      height: 30px;
+    }
+
+    &:focus {
+      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
+      border: 2px solid $green-btn;
+    }
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: $green-btn;
+      top: 10px;
+      display: block;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+
+  .before-after__indicator-right {
+    display: none;
+  }
+
+  .before-after__range {
+    display: none;
+  }
+
+  .before-after__status {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .before-after__status span {
+    cursor: pointer;
+  }
+
+  .cat-after {
+    content: "";
+    position: absolute;
     width: 690px;
     height: 517px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktops) {
+  .before-after__status {
+    width: 100%;
+    padding-left: 45px;
+  }
+
+  .before-after__image {
+    margin-bottom: 45px;
+  }
+
+  .before-after__block--after {
+    margin-right: 37px;
   }
 }

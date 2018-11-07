@@ -1,13 +1,60 @@
 .extra-info__items {
   @include list-style-none();
   @include m-p-clear();
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .extra-info__item {
   display: flex;
   align-items: center;
-  min-height: 30px;
-  padding: 12px 0;
+  min-height: 41px;
+}
+
+.extra-item__input {
+  display: none;
+}
+
+.extra-item__label {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+    outline: 1px solid $color-cd;
+    background: $bgr;
+  }
+
+  &:hover::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.extra-item__input:checked ~ .extra-item__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: center;
 }
 
 @media (min-width: $tablets) {
@@ -23,11 +70,32 @@
   }
 
   .extra-info__item {
-    width: 280px;
+    width: 285px;
+    margin: 15px 0;
   }
 
   .extra-item__label {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .extra-item__input:checked ~ .extra-item__label::before {
+    background-size: 25px;
+  }
+}
+
+
+@media (min-width: $desktops) {
+  .extra-info__items {
+    margin-bottom: 45px;
+  }
+
+  .extra-info__item {
+    width: 245px;
   }
 }

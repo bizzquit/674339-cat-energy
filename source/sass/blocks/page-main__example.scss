@@ -7,14 +7,16 @@
 
 @media (min-width: $tablets) {
   .page-main__example {
-    width: $tablets;
-    background-color: $bgr;
+    width: 100%;
+    background-image: linear-gradient($bgr 0%, $bgr 53%, $color-f2 53%);
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: $desktops) {
   .page-main__example {
-    width: $desktops;
-    margin-top: 40px;
+    width: 100%;
+    background-image: linear-gradient($bgr 0%, $bgr 22%, $color-f2 22%);
+    margin-bottom: 0;
   }
 }

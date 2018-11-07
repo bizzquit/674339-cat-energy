@@ -1,29 +1,37 @@
 .page-footer {
   @include m-p-clear();
   width: 100%;
-}
-
-.contacts__contacts-items {
-  @include padd-mobile();
-  width: $mobiles - 40px;
-  margin: 0 auto;
+  background-color: $color-f2;
 }
 
 .page-footer__footer {
-  @include padd-mobile();
   width: $mobiles - 40px;
   margin: 0 auto;
 }
 
 .page-footer__logo {
   text-align: center;
-  padding: 10px 0;
   border-bottom: 1px solid $color-d9;
+  min-height: 57px;
+  margin-top: 40px;
+
+  &-link:hover {
+    opacity: 0.8;
+  }
+
+  &-link:active {
+    opacity: 0.6;
+  }
+
+  &-link:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablets) {
   .page-footer {
     width: 100%;
+    background-color: $color-f2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,8 +41,10 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
@@ -57,5 +67,6 @@
   .page-footer__footer {
     @include padd-desktop();
     width: $desktops - 80px;
+    padding-top: 30px;
   }
 }
