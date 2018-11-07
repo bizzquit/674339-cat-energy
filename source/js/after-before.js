@@ -1,7 +1,7 @@
-var btnBefore = document.querySelector('.before-after__block--before');
-var btnAfter = document.querySelector('.before-after__block--after');
-var imgAfter = document.querySelector(".before-after__image--after");
-var imgBefore = document.querySelector(".before-after__image--before");
+var btnBefore = document.querySelector(".before-after__block--before");
+var btnAfter = document.querySelector(".before-after__block--after");
+var imgAfter = document.querySelector(".before-after__image-after");
+var imgBefore = document.querySelector(".before-after__image-before");
 var indicator = document.querySelector(".before-after__indicator-left");
 var indiLeft = document.querySelector(".before-after__indicator-left");
 var indiRight = document.querySelector(".before-after__indicator-right");
@@ -13,8 +13,8 @@ btnAfter.addEventListener("click", function () {
 
   if (width < 768)
     {
-      indiLeft.classList.remove("before-after__indicator--active");
-      indiRight.classList.add("before-after__indicator--active");
+      indiLeft.classList.remove("before-after__indicator-active");
+      indiRight.classList.add("before-after__indicator-active");
       indiRight.style.marginRight = "5px";
     }
 });
@@ -26,8 +26,7 @@ btnBefore.addEventListener("click", function () {
 
   if (width < 768)
     {
-      alert("1");
-      indiLeft.classList.add("before-after__indicator--active");
-      indiRight.classList.remove("before-after__indicator--active");
+      indiLeft.classList.add("before-after__indicator-active");
+      indiRight.classList.remove("before-after__indicator-active");
     }
 });
