@@ -8,6 +8,8 @@
   @include p-text();
   @include padd-mobile();
   margin-bottom: 25px;
+  font-kerning: none;
+  padding-right: 25px;
 }
 
 .example__stat {

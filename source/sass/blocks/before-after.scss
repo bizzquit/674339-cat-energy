@@ -60,9 +60,8 @@
   }
 
   .before-after__image {
-    width: 690px;
+    width: 705px;
     height: 517px;
-    padding-left: 10px;
     margin: 0 auto;
     margin-bottom: 18px;
     position: relative;
@@ -81,7 +80,7 @@
   }
 
   .before-after__block--after {
-    margin-right: 38px;
+    margin-right: 77px;
   }
 
   .before-after__indicator {
@@ -171,5 +170,9 @@
 
   .before-after__image {
     margin-bottom: 45px;
+  }
+
+  .before-after__block--after {
+    margin-right: 37px;
   }
 }

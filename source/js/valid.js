@@ -1,4 +1,4 @@
-var arr = document.querySelectorAll("input , textarea");
+var arr = document.querySelectorAll(".text-item__input--required");
 
 for (var i = 0; i < arr.length; i++) {
   arr[i].onblur = function() {

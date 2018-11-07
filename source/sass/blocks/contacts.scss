@@ -1,6 +1,6 @@
 .contacts__contacts-map {
   background-color: $bgr;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 .contacts__contacts-items {
@@ -15,7 +15,6 @@
 .contacts__title {
   @include m-p-clear();
   @include oswald-regular();
-  letter-spacing: 0.6px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -33,7 +32,7 @@
 .contacts__map {
   position: relative;
   max-width: 100%;
-  max-height: 355px;
+  max-height: 360px;
   overflow: hidden;
 
   &::before {

@@ -1,13 +1,13 @@
 .form__text-items {
   @include list-style-none();
   @include m-p-clear();
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .form__program-items {
   @include list-style-none();
   @include m-p-clear();
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .form__programs-item {
@@ -38,6 +38,52 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-text;
+  background-color: $bgr;
+  margin-right: 10px;
+  display: block;
+  width: 200px;
+}
+
+.form__title--comment {
+  width: 142px;
+}
+
+.form__title--dop {
+  width: 165px;
+}
+
+.form__contact-block {
+  position: relative;
+  margin-top: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    height: 3px;
+    background-color: $green-btn;
+    z-index: -1;
+  }
+}
+
+.form__extra-info {
+  position: relative;
+  margin-top: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    height: 3px;
+    background-color: $green-btn;
+    z-index: -1;
+  }
 }
 
 .form__contact-item {
@@ -49,7 +95,20 @@
 }
 
 .form__comment {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    height: 3px;
+    background-color: $green-btn;
+    z-index: -1;
+  }
 }
 
 .form__submit-block {
@@ -63,6 +122,7 @@
 .text-item__label {
   @include oswald-regular();
   @include font-s-label();
+  margin-right: 10px;
 }
 
 .text-item__input {
@@ -72,7 +132,8 @@
   outline: none;
   border: 1px solid rgba($color-cd, 0.5);
   width: 100%;
-  padding: 14px 0 14px 13px;
+  padding: 12px 0 12px 13px;
+  margin-right: 0;
 
   &:hover {
     border: 1px solid $color-cd;
@@ -277,11 +338,11 @@
   }
 
   .text-item__input[type="tel"] {
-    background-position: 475px center;
+    background-position: 487px center;
   }
 
   .text-item__input[type="email"] {
-    background-position: 490px 20px;
+    background-position: 507px 20px;
   }
 
   .text-item__label {
