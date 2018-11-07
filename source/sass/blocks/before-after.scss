@@ -48,6 +48,10 @@
   border-radius: 20px;
 }
 
+.before-after__image--after {
+  display: none;
+}
+
 @media (min-width: $tablets) {
   .before-after {
     margin-top: 90px;
@@ -100,7 +104,11 @@
     border: 1px solid $color-cd;
     border-radius: 50%;
     top: -14px;
-    left: 198px;
+    left: -15px;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &::before {
       content: "";
@@ -115,10 +123,6 @@
   }
 
   .before-after__indicator-right {
-    display: none;
-  }
-
-  .before-after__image--after {
     display: none;
   }
 
