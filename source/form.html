@@ -89,11 +89,17 @@
                   <label for="email" class="text-item__label">e-mail:*</label>
                   <input type="email" name="email" id="email" class="text-item__input text-item__input--required" placeholder="kuklachev@gmail.com" required>
                   <!--тут будет svg-icon-->
+                  <svg class="contact-item__icon contact-item__icon--email" width="17" height="13">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </li>
                 <li class="form__contact-item contact-item">
                   <label for="phone" class="text-item__label">Телефон:*</label>
                   <input type="tel" name="phone" id="phone" class="text-item__input text-item__input--required" placeholder="8 (960) 900-60-90" required>
                   <!--тут будет svg-icon-->
+                  <svg class="contact-item__icon contact-item__icon--phone" width="17" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </li>
               </ul>
             </div>
@@ -161,24 +167,49 @@
     <!--логотип-->
     <div class="page-footer__footer">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link"  href="index.html"><img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании"></a>
+        <img src="img/logo-footer.svg" width="135" height="27" alt="логотип компании">
       </div>
       <section class="page-footer__social-icons social-icons">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-icons__items">
-          <li class="social-icons__item social-icons__item--vk"><img src="img/icon-vk-mobile.svg" width="20" height="20" alt="Мы в вконтакте"></li>
-          <li class="social-icons__item social-icons__item--inst"><img src="img/icon-insta-mobile.svg" width="20" height="20" alt="Мы в инстаграмм"></li>
-          <li class="social-icons__item social-icons__item--fb"><img src="img/icon-fb-mobile.svg" width="20" height="20" alt="Мы в фэйсбук"></li>
+          <li class="social-icons__item social-icons__item--vk">
+            <a class="social-icons__item-link social-icons__item-link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">группа вконтакте</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item social-icons__item--inst">
+            <a class="social-icons__item-link social-icons__item-link--inst" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">инстаграм</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item social-icons__item--fb">
+            <a class="social-icons__item-link social-icons__item-link--fb" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фэйсбук</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </section>
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <h4 class="copyright__name">HTML Academy</h4>
-          <img src="img/htmlacademy.svg" width="27" height="35" alt="логотип академии">
+          <svg class="page-footer__copyright-logo" width="27" height="35">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/valid.min.js"></script>

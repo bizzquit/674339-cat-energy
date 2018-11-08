@@ -29,6 +29,16 @@
   min-width: 140px;
 }
 
+.contact-item__icon {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+
+.contact-item__icon--phone {
+  top: 15px;
+}
+
 .contacts__map {
   position: relative;
   max-width: 100%;
