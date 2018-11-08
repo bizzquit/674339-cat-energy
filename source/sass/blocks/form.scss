@@ -379,7 +379,7 @@
   }
 
   .form__contact-block {
-    margin-top: 18px;
+    margin-top: 27px;
   }
 
   .form__contact-items {
@@ -390,6 +390,23 @@
 
   .form__contact-item {
     width: 570px;
+  }
+
+  .form-block {
+    margin-bottom: 22px;
+  }
+  
+  .text-item__input {
+    font-size: 20px;
+    padding: 12px 0 12px 16px;
+  }
+
+  .text-item__label {
+    margin-right: 15px;
+  }
+
+  .form__text-item {
+    margin-bottom: 21px;
   }
 
   .text-item__input[type="email"] {

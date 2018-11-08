@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
@@ -8,12 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body class="page">
-
   <header class="page-header page-header--index">
-    <!--логотип-->
-    <!--главное меню-->
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <picture>
@@ -31,9 +26,6 @@
         </ul>
       </nav>
     </div>
-
-    <!--Промо - реклама-->
-    <!--Ссылка на форму-->
     <section class="page-header__promo promo">
       <div class="promo__text-block">
         <h1 class="promo__title title">Функциональное питание для котов</h1>
@@ -44,9 +36,7 @@
       </div>
     </section>
   </header>
-
   <main class="page-main page-main--index">
-    <!--Ссылки на каталог 1 и 2 программы питания-->
     <section class="page-main__programs programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs__container container">
@@ -63,7 +53,6 @@
         </div>
       </div>
     </section>
-    <!--Как это работает-->
     <section class="page-main__features features">
       <h2 class="features__title title">Как это работает</h2>
       <ol class="features__items">
@@ -81,7 +70,6 @@
         </li>
       </ol>
     </section>
-    <!--Живой пример-->
     <section class="page-main__example example">
       <div class="example__block">
         <h2 class="example__title">Живой пример</h2>
@@ -104,7 +92,6 @@
                 <source type="image/webp" media="(min-width:1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width:768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width:320px)" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
-
                 <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                 <source media="(min-width:768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота До и После">
@@ -113,7 +100,6 @@
                 <source type="image/webp" media="(min-width:1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width:768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width:320px)" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
-
                 <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                 <source media="(min-width:768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота До и После">
@@ -132,7 +118,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer contacts">
     <section class="contacts__contacts-map contacts__contacts-map--index">
       <h2 class="visually-hidden">Приглашаем ксотрудничеству</h2>
@@ -145,7 +130,6 @@
           <source type="image/webp" media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width:768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" media="(min-width:320px)" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
-
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
@@ -161,9 +145,9 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-icons__items">
           <li class="social-icons__item social-icons__item--vk">
-            <a class="social-icons__item-link social-icons__item-link--vk" href="https://vk.com/htmlacademy">
+            <a href="https://vk.com/htmlacademy">
               <span class="visually-hidden">группа вконтакте</span>
-              <svg width="20" height="20">
+              <svg width="30" height="30" class="social-icons__item-link social-icons__item-link--vk">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -171,15 +155,15 @@
           <li class="social-icons__item social-icons__item--inst">
             <a class="social-icons__item-link social-icons__item-link--inst" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">инстаграм</span>
-              <svg width="20" height="20">
+              <svg width="25" height="25" class="social-icons__item-link social-icons__item-link--inst">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social-icons__item social-icons__item--fb">
-            <a class="social-icons__item-link social-icons__item-link--fb" href="https://www.facebook.com/htmlacademy">
+            <a href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фэйсбук</span>
-              <svg width="20" height="20">
+              <svg width="20" height="30" class="social-icons__item-link social-icons__item-link--fb">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
@@ -189,21 +173,17 @@
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <h4 class="copyright__name">HTML Academy</h4>
-          <svg class="page-footer__copyright-logo" width="27" height="35">
+          <svg class="page-footer__copyright-logo" width="45" height="40">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
-
   </footer>
-
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
-
   <script src="js/after-before.min.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
-
 </html>

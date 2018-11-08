@@ -31,7 +31,7 @@
 
 .contact-item__icon {
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 18px;
 }
 
@@ -133,10 +133,19 @@
   .contacts__contacts-items {
     width: 510px;
     position: absolute;
-    top: 100px;
+    top: 96px;
     left: 110px;
     min-height: 200px;
     background: $bgr;
+  }
+
+  .contact-item__icon {
+    right: 20px;
+    top: 20px;
+  }
+
+  .contact-item__icon--phone {
+    top: 18px;
   }
 
   .contacts__address {
