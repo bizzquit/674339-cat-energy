@@ -395,11 +395,6 @@
   .form-block {
     margin-bottom: 22px;
   }
-  
-  .text-item__input {
-    font-size: 20px;
-    padding: 12px 0 12px 16px;
-  }
 
   .text-item__label {
     margin-right: 15px;
@@ -415,6 +410,11 @@
 
   .text-item__input[type="tel"] {
     background-position: 420px center;
+  }
+
+  .text-item__input {
+    font-size: 20px;
+    padding: 12px 0 12px 16px;
   }
 
   .form__comment {

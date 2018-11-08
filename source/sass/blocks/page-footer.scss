@@ -33,7 +33,15 @@
 }
 
 .page-footer__copyright-logo {
-   margin-right: -10px;
+  margin-right: -10px;
+
+  &:hover {
+    fill: $green-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -83,6 +91,7 @@
     width: $desktops - 80px;
     padding-top: 23px;
   }
+
   .page-footer__copyright {
     padding-top: 15px;
   }
