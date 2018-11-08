@@ -14,19 +14,24 @@
   border-bottom: 1px solid $color-d9;
   min-height: 57px;
   margin-top: 40px;
+}
 
-  &-link:hover {
+.page-footer__logo-link {
+  text-align: center;
+
+  &:hover {
     opacity: 0.8;
   }
 
-  &-link:active {
+  &:active {
     opacity: 0.6;
   }
 
-  &-link:focus {
+  &:focus {
     opacity: 0.6;
   }
 }
+
 
 @media (min-width: $tablets) {
   .page-footer {

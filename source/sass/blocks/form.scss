@@ -149,10 +149,6 @@
     border: 2px solid $color-text-4;
   }
 
-  /*&:invalid {
-    border: 2px solid $color-invalid;
-  }*/
-
   &::placeholder {
     @include oswald-regular();
     @include font-s-label();

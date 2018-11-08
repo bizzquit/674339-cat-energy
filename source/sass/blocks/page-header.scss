@@ -19,12 +19,16 @@
   width: 192px;
   align-self: start;
   margin-top: 13px;
+}
 
-  &-link:hover {
+.page-header__logo-link {
+  display: block;
+
+  &:hover {
     opacity: 0.8;
   }
 
-  &-link:active {
+  &:active {
     opacity: 0.6;
   }
 }
@@ -150,7 +154,6 @@
     border-bottom: 2px solid $green-btn;
   }
 }
-
 
 @media (min-width: $desktops) {
   .page-header {
