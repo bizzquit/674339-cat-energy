@@ -17,7 +17,6 @@
 
 .page-header__logo {
   width: 192px;
-  align-self: start;
   margin-top: 13px;
 }
 
@@ -155,13 +154,6 @@
 }
 
 @media (min-width: $desktops) {
-  .page {
-    background-image: url("../img/1-i-d.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: 0;
-  }
-
   .page-header {
     width: $desktops;
   }
