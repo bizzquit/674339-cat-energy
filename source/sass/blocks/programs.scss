@@ -6,6 +6,7 @@
   background-color: $bg-lite-grey;
   margin-bottom: 20px;
   padding: 0 40px;
+  padding-bottom: 20px;
 }
 
 .programs__block-title {
@@ -67,7 +68,6 @@
   color: $color-text;
   display: block;
   position: relative;
-  min-height: 35px;
 
 
   &::after {
@@ -77,6 +77,8 @@
     background: url("../img/icon-right-arrow-verylong.svg") 0 2px no-repeat;
     position: absolute;
     margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &:hover::after {
