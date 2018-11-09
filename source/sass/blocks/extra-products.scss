@@ -93,6 +93,10 @@
   margin-bottom: 62px;
 }
 
+.extra-products__present-icon {
+  fill: #eef6e9;;
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .extra-products__present {
     background: url("../img/gift-photo-mobile@2x.jpg");
@@ -282,6 +286,7 @@
     margin-bottom: 65px;
     margin-top: 75px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+    max-height: 290px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
