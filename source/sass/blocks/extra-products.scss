@@ -94,7 +94,8 @@
 }
 
 .extra-products__present-icon {
-  fill: #eef6e9;;
+  fill: #eef6e9;
+  margin-top: 15px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -102,10 +103,6 @@
     background: url("../img/gift-photo-mobile@2x.jpg");
     background-size: contain;
   }
-}
-
-.extra-products__present-icon {
-  margin-top: 15px;
 }
 
 .extra-products__present-text {
