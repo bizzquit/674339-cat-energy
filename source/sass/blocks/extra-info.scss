@@ -45,8 +45,11 @@
     opacity: 0.3;
   }
 
-  &:focus {
-    opacity: 0.3;
+  &:focus::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
   }
 }
 

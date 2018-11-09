@@ -92,6 +92,7 @@
   margin: 10px 0;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .form__comment {
@@ -134,6 +135,7 @@
   width: 100%;
   padding: 12px 0 12px 13px;
   margin-right: 0;
+  box-shadow: none;
 
   &:hover {
     border: 1px solid $color-cd;
@@ -147,15 +149,15 @@
     border: 2px solid $color-text-4;
   }
 
-  &:invalid {
-    border: 2px solid $color-invalid;
-  }
-
   &::placeholder {
     @include oswald-regular();
     @include font-s-label();
     color: $color-text-4;
   }
+}
+
+.text-item__input--error {
+  border: 2px solid $color-invalid;
 }
 
 .extra-item__label {
@@ -188,18 +190,12 @@
   text-align: center;
 }
 
-.text-item__input[type="tel"] {
-  background-image: url("../img/icon-phone.svg");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 160px center;
+.text-item__input--error ~ .contact-item__icon {
+  fill: $color-invalid;
 }
 
-.text-item__input[type="email"] {
-  background-image: url("../img/icon-mail.svg");
-  background-size: 18px;
-  background-repeat: no-repeat;
-  background-position: 175px 15px;
+.text-item__input:focus ~ .contact-item__icon {
+  fill: $green-btn;
 }
 
 @media (min-width: $tablets) {
@@ -383,7 +379,7 @@
   }
 
   .form__contact-block {
-    margin-top: 18px;
+    margin-top: 27px;
   }
 
   .form__contact-items {
@@ -396,12 +392,29 @@
     width: 570px;
   }
 
+  .form-block {
+    margin-bottom: 22px;
+  }
+
+  .text-item__label {
+    margin-right: 15px;
+  }
+
+  .form__text-item {
+    margin-bottom: 21px;
+  }
+
   .text-item__input[type="email"] {
     background-position: 435px 17px;
   }
 
   .text-item__input[type="tel"] {
     background-position: 420px center;
+  }
+
+  .text-item__input {
+    font-size: 20px;
+    padding: 12px 0 12px 16px;
   }
 
   .form__comment {

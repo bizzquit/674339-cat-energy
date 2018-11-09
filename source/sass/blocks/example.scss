@@ -117,7 +117,7 @@
     font-size: 30px;
     line-height: 37.02px;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
   }
 
   .example__stat-value {
@@ -126,17 +126,29 @@
     line-height: 14px;
     display: inline;
     width: auto;
-    padding: 0 10px;
-    bottom: -5px;
+    padding: 0 5px;
+    bottom: -7px;
     margin-left: 0;
-    align-self: center;
+    /*align-self: center;*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .example__stat-value--weight {
+    width: 105px;
+  }
+
+  .example__stat-value--time {
+    width: 130px;
   }
 }
 
 @media (min-width: $desktops) {
   .example__block {
     width: $desktops;
-    min-height: 590px;
+    min-height: 595px;
   }
 
   .example__title {

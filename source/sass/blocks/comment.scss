@@ -1,5 +1,7 @@
 .comment__text-input {
   @include border-input();
+  @include oswald-regular();
+  text-transform: uppercase;
   width: 263px;
   min-height: 118px;
   padding: 15px 0 15px 15px;
@@ -15,6 +17,8 @@
 
 @media (min-width: $tablets) {
   .comment__text-input {
+    @include oswald-regular();
+    text-transform: uppercase;
     width: 100%;
     max-width: 610px;
     min-height: 150px;
@@ -24,6 +28,9 @@
     padding: 10px 0 15px 20px;
 
     &::placeholder {
+      @include oswald-regular();
+      color: $color-text-4;
+      text-transform: uppercase;
       font-size: 20px;
       line-height: 30px;
     }
@@ -32,7 +39,18 @@
 
 @media (min-width: $desktops) {
   .comment__text-input {
+    @include oswald-regular();
     width: 100%;
     max-width: $desktops - 95px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      color: $color-text-4;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
