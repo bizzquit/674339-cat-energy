@@ -119,8 +119,7 @@
     }
 
     &:focus {
-      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
-      border: 2px solid $green-btn;
+      box-shadow: 0 3px 5px 0 rgba($black, 0.25);
     }
 
     &::before {

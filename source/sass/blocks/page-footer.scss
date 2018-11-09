@@ -58,10 +58,11 @@
     @include padd-tablets();
     width: $tablets - 60px;
     margin: 0 auto;
-    padding-top: 23px;
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 150px;
   }
 
   .page-footer__logo {
@@ -89,7 +90,6 @@
   .page-footer__footer {
     @include padd-desktop();
     width: $desktops - 80px;
-    padding-top: 23px;
   }
 
   .page-footer__copyright {
