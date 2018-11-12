@@ -82,6 +82,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    padding-right: 40px;
   }
 
   .example__stat {
@@ -117,7 +118,7 @@
     font-size: 30px;
     line-height: 37.02px;
     text-transform: uppercase;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
   }
 
   .example__stat-value {
@@ -153,7 +154,7 @@
 
   .example__title {
     @include padd-desktop();
-    margin-bottom: 140px;
+    margin-bottom: 142px;
   }
 
   .example__text {

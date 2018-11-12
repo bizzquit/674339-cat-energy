@@ -149,10 +149,10 @@
   .catalog__item {
     width: 244px;
     padding: 40px;
-    margin-top: 135px;
+    margin-top: 140px;
     margin-bottom: 0;
     background-color: $color-f2;
-    min-height: 355px;
+    min-height: 350px;
   }
 
   .catalog__item--more {
@@ -176,6 +176,14 @@
 }
 
 @media (min-width: $desktops) {
+  .catalog__list {
+    margin-top: 20px;
+  }
+
+  .catalog__product {
+    margin-top: 7px;
+  }
+
   .catalog__title {
     @include padd-desktop();
     width: $desktops - 80px;

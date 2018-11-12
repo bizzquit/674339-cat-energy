@@ -3,13 +3,15 @@
   background: $bg-lite-grey;
   width: $mobiles;
   margin: 0 auto;
+  padding-top: 18px;
 }
 
 @media (min-width: $tablets) {
   .page-main__example {
     width: 100%;
-    background-image: linear-gradient($bgr 0%, $bgr 53%, $color-f2 53%);
+    background-image: linear-gradient($bgr 0%, $bgr 55%, $color-f2 55%);
     margin-bottom: 5px;
+    padding-top: 0;
   }
 }
 

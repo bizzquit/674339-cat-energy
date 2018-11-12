@@ -46,7 +46,8 @@
     @include padd-tablets();
     min-height: 830px;
     background: url("../img/index-can-tablet@1x.jpg") 30px bottom no-repeat;
-    margin-bottom: 70px;
+    margin-bottom: 0;
+    margin-top: 8px;
   }
 
   .promo__text-block {
@@ -105,12 +106,12 @@
   .promo {
     min-height: 535px;
     background: none;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .promo__text-block {
     padding-left: 80px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 
     &::after {
       content: "";
@@ -120,7 +121,7 @@
       height: 499px;
       background: url("../img/index-can-desktop@1x.png") 0 center no-repeat;
       background-size: 550px;
-      top: -90px;
+      top: -85px;
       left: 37.5%;
     }
   }

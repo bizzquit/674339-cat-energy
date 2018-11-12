@@ -81,6 +81,7 @@
 @media (min-width: $tablets) {
   .contacts__contacts-map {
     width: 100%;
+    padding-top: 3px;
   }
 
   .contacts__contacts-items {
@@ -115,7 +116,7 @@
 
   .contacts__map {
     width: auto;
-    max-height: 400px;
+    max-height: 395px;
   }
 
   .contacts__contacts-map--index {

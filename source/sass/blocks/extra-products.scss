@@ -120,7 +120,7 @@
   .extra-products {
     @include m-p-clear();
     width: 100%;
-    margin-top: 67px;
+    margin-top: 64px;
 
     &::before {
       content: "";
@@ -187,7 +187,7 @@
   }
 
   .extra-products__list {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     margin-top: 78px;
   }
 
@@ -205,7 +205,7 @@
     background-size: 100%;
     max-width: 708px;
     min-height: 200px;
-    margin-bottom: 90px;
+    margin-bottom: 95px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -231,7 +231,7 @@
 
 @media (min-width: $desktops) {
   .extra-products {
-    margin-top: 70px;
+    margin-top: 75px;
     padding-bottom: 10px;
   }
 
@@ -249,6 +249,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 0;
+    margin-bottom: 7px;
   }
 
   .extra-products__list {
@@ -305,7 +306,7 @@
 
   .extra-products__btn {
     width: 245px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 15px;
   }
 }
