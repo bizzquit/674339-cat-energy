@@ -3,7 +3,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 75px;
+  padding-top: 20px;
+  padding-right: 75px;
+  padding-left: 75px;
   padding-bottom: 12px;
   border-bottom: 1px solid $color-d9;
 }
@@ -51,7 +53,10 @@
   .social-icons__items {
     justify-content: normal;
     width: 170px;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
     margin-top: 10px;
   }

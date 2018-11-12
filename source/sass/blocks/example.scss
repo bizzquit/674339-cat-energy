@@ -61,7 +61,10 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  margin: 33px 0;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -127,10 +130,12 @@
     line-height: 14px;
     display: inline;
     width: auto;
-    padding: 0 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
     bottom: -7px;
     margin-left: 0;
-    /*align-self: center;*/
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -149,7 +154,8 @@
 @media (min-width: $desktops) {
   .example__block {
     width: $desktops;
-    min-height: 595px;
+    min-height: 550px;
+    padding-bottom: 45px;
   }
 
   .example__title {

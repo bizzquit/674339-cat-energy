@@ -2,7 +2,10 @@
   @include m-p-clear();
   @include h2-size-font();
   color: $color-text;
-  padding: 0 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 25px;
 }
 
